@@ -55,7 +55,8 @@ class Block:
                                                            np.eye(int(self.dim / 2), int(self.dim / 2)))}
 
     def grow(self, interaction):
-        """ For growing the left block Hamiltonian, i.e. to include a new site into the block Hilbert space
+        """ For growing the left or right block, i.e. to include a new site into the block Hilbert space
+        and update all operators of the block
 
         Parameters:
         -----------
