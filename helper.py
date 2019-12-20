@@ -58,9 +58,6 @@ class Logger:
         pass
 
 
-sys.stdout = Logger()
-
-
 def plot(left_size, right_size, growing_side):
     """ For plotting the position of bond that partitions the superblock"""
     if growing_side not in [None, "left", "right"]:
@@ -76,4 +73,4 @@ def plot(left_size, right_size, growing_side):
     elif growing_side == "left":
         print("Geometry: ", left_block + "||" + rarrow + "  " + right_block)
     else:
-        print("Geometry: ", left_block + larrow  + "||  " + right_block)
+        print("Geometry: ", left_block + larrow + "||  " + right_block)
