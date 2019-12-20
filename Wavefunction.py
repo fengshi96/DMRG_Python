@@ -20,8 +20,7 @@ class Wavefunction(object):
         """
         super(Wavefunction, self).__init__()
         try:
-            self.as_matrix = np.empty((left_dim, right_dim),
-                                      num_type)
+            self.as_matrix = np.empty((left_dim, right_dim), num_type)
         except TypeError:
             print("Bad args for wavefunction")
             raise
