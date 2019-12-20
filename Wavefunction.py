@@ -2,28 +2,18 @@ import numpy as np
 
 
 class Wavefunction(object):
-    """A wavefunction object
-
-    You use this class to represent wavefunctions. Wavefunctions are
-    stored as matrices, the rows corresponding to the states of the
-    left block, and the columns corresponding to the states of the
-    right block.
-
+    """ The wavefunction of a bipartite system, comes with trash elements.
     """
 
     def __init__(self, left_dim, right_dim, num_type='double'):
         """Creates an empty wavefunction
 
-        The wavefunction has the correct dimensions, but their
-        contents are garbage. You *must* give it a value before use it for
-        any calculation.
+        The wavefunction of a bipartite system, comes with trash elements.
 
         Parameters
         ----------
-        left_dim : an int
-            The dimension of the Hilbert space of the left block
-        right_dim : an int
-            The dimension of the Hilbert space of the right block
+        left_dim : The dimension of the Hilbert space of the left block (int type)
+        right_dim : The dimension of the Hilbert space of the right block (int type)
         num_type : a double or complex
             The type of the wavefunction matrix elements.
 
@@ -41,27 +31,14 @@ class Wavefunction(object):
         self.num_type = num_type
 
     def rdm(self, block_to_be_traced_over):
-        """Constructs the reduced DM for this wavefunction.
-
-        You use this function to build the reduced density matrix of this
-        wavefunction. The reduced DM is itself a square and hermitian
-        matrix as it should.
+        """
+        Constructs the reduced density matrix of the wavefunction
 
         Parameters
         ----------
-        block_to_be_traced_over : a string
-            Which block (left or right) will be traced over.
-
-        Returns
-        -------
-        result : a numpy array with ndim = 2
-            Which is an hermitian matrix with the reduced DM.
-
-        Raises
-        ------
-            if the name for the block to be traced out is not correct.
-
+        block_to_be_traced_over : a string, left or right block to be traced over
         """
+
         if block_to_be_traced_over not in ('left', 'right'):
             print("block_to_be_traced_over must be left or right")
             raise

@@ -6,14 +6,15 @@ from helper import Logger, plot
 # for exporting the logfile
 sys.stdout = Logger()
 
+num_sites = 16 # total number of sites in the chain
+dmax = 22 # maximal number of states to keep
+interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]] # define isotropic Heisenberg interaction
+
 # Warm up by infinite size DMRG
-num_sites = 16
-dmax = 22
-interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]]
 left_block, right_block, storage = warmup(num_sites, dmax, interaction)
 
-num_sweeps = 3
-half_sweeps = 0
+num_sweeps = 3 # define the total number of sweeps
+half_sweeps = 0 # for iteration, begin at 0
 super_block = left_block.glue(right_block, interaction)
 print("(fDMRG)left_block.dim before sweep is ", left_block.dim)
 
@@ -32,6 +33,7 @@ while half_sweeps < 2 * num_sweeps:
         left_dim = left_block.dim
         right_dim = right_block.dim
         evals, evecs = np.linalg.eigh(super_block.block_operators["block_ham"])  # diagonalize the super_block
+
         # bipartition of the ground state wavefunction
         wf_gs = Wavefunction(left_dim, right_dim)
         wf_gs.as_matrix = np.reshape(evecs[:, 0], (left_dim, right_dim))
@@ -72,10 +74,10 @@ while half_sweeps < 2 * num_sweeps:
     print("--------------This is the end of " + str(half_sweeps) + "th Half-Sweep (L2R)--------------")
 
     if half_sweeps == 2 * num_sweeps - 1:
-        # the last half sweep
+        # manually gauge steps for the last half sweep
         lsize_max = int(num_sites / 2)
     else:
-        # right to left
+        # right to left sweep
         lsize_max = int(left_block.num_sites)
 
     for lsize in range(lsize_max - 1, 0, -1):
@@ -113,7 +115,7 @@ while half_sweeps < 2 * num_sweeps:
             right_evecs_truncated = right_evecs[:, -dmax:]
             right_evals_truncated = right_evals[-dmax:]
 
-            # Rotate all block_operators in right block
+            # Rotate all block_operators in right block if needed
             right_block.truncate(right_evecs_truncated)
             right_block.dim = dmax
 

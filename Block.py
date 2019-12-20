@@ -58,8 +58,9 @@ class Block:
         """ For growing the left block Hamiltonian, i.e. to include a new site into the block Hilbert space
 
         Parameters:
+        -----------
                 interaction: a list of N by 2
-                interaction = [[block_op_1, site_op_1, param],...,[block_op_N, site_op_N, param]]
+                e.g. interaction = [[block_op_1, site_op_1, param],...,[block_op_N, site_op_N, param]]
         """
 
         if self.dim == 2:
@@ -97,7 +98,7 @@ class Block:
 
     def glue(self, block_B, interaction):
         """ Glue together this block with block B, which is an object in Block class
-            connect by interaction matrix
+            connected by interaction matrix
         """
         super_block = Block(self.dim * block_B.dim)  # initially the block hamiltonian is a zero matrix
         if self.side == "left":

@@ -7,14 +7,16 @@ from Wavefunction import Wavefunction
 
 def warmup(num_sites, dmax, interaction):
     """
-    num_sites: the total number of sites of the system.
-    dmax: the maximal number of states to keep
-    interaction: interaction between sites, it is a matrix
+    Or the infinite size DMRG algorithm - the preparation for finite size DMRG
+    Parameters:
+        num_sites: the total number of sites of the system.
+        dmax: the maximal number of states to keep
+        interaction: interaction matrix between sites
     """
 
     left_block = Block(2, "left")
     right_block = Block(2, "right")
-    block_sites = num_sites / 2  # number of sites per sub block, 2*4 = 8 sites in the super block
+    block_sites = num_sites / 2  # number of sites per sub block
     storage = Memory()
 
     iteration = 1
@@ -101,7 +103,4 @@ def sweep(growing_side, left_block, right_block, interaction, storage):
     print("(After one step in Sweep) shrinking_block.dim = ", shrinking_block.dim)
     print("(After one step in Sweep) shrinking_block.num_sites = ", shrinking_block.num_sites)
 
-    # holder
-    truncation_error = 0
-
-    return truncation_error
+    return 0
