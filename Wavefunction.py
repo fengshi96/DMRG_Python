@@ -27,10 +27,6 @@ class Wavefunction(object):
         num_type : a double or complex
             The type of the wavefunction matrix elements.
 
-        Raises
-        ------
-        DMRGException
-            if the left_dim, right_dim are not integers or bad args.
         """
         super(Wavefunction, self).__init__()
         try:
