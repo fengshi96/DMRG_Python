@@ -3,15 +3,10 @@ from helper import tensor_prod, truncation
 
 
 class Block:
-    """A block.
-
-    That is the representation of the Hilbert space and operators of a
-    direct product of single site's Hilbert space and operators, that have
-    been truncated.
-
-    You use this class to create the two blocks (one for the left, one for
-    the right) needed in the DMRG algorithm. The block comes empty.
-
+    """ A block.
+    This class to defines the blocks (one for the left, one for
+    the right) needed in the DMRG algorithm. The block comes with
+    well defined operators for spin-1/2 site
     """
 
     def __init__(self, dim, side="left"):

@@ -1,5 +1,5 @@
 class Memory:
-    """The memory of the system during idmrg or last sweep
+    """The memory of the system during both infinite and finite size DMRG
         subject to update
     """
 
@@ -11,8 +11,12 @@ class Memory:
         self.left_operators = []
         self.right_operators = []
 
-    def snapshot(self, left_block, right_block, bias=None):  # snapshot of one block
-        """copy information in a superblock"""
+    def snapshot(self, left_block, right_block, bias=None):
+        """ copy information in a superblock
+            bias tells the function the memory which sub-block to update
+            if bias is set to none, update both blocks
+        """
+
         print("copy information from blocks")
         self.sizes.append([left_block.num_sites, right_block.num_sites])
         if bias is None:  # take the global picture
