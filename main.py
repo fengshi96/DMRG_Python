@@ -7,7 +7,7 @@ from helper import Logger
 sys.stdout = Logger()
 
 # Warm up by infinite size DMRG
-num_sites = 32
+num_sites = 16
 dmax = 22
 interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]]
 left_block, right_block, storage = warmup(num_sites, dmax, interaction)
@@ -25,6 +25,7 @@ while half_sweeps < 2 * num_sweeps:
     for rsize in range(rsize_max - 1, 0, -1):
         print("rsize = ", rsize)
         sweep("left", left_block, right_block, interaction, storage)
+        plot(left_block.num_sites, right_block.num_sites, "left")  # show geometry
         print("left_block.dim (The current growing side's dim) = ", left_block.dim)
         super_block = left_block.glue(right_block, interaction)
 
@@ -81,6 +82,7 @@ while half_sweeps < 2 * num_sweeps:
         print("lsize = ", lsize)
         print("left_block, right_block = ", left_block.dim, right_block.dim)
         sweep("right", left_block, right_block, interaction, storage)
+        plot(left_block.num_sites, right_block.num_sites, "right")  # show geometry
         print("left_block, right_block (After dfmrg) = ", left_block.dim, right_block.dim)
         super_block = left_block.glue(right_block, interaction)
         left_dim = left_block.dim
@@ -128,5 +130,6 @@ while half_sweeps < 2 * num_sweeps:
 evals, evecs = np.linalg.eigh(super_block.block_operators["block_ham"])  # diagonalize the final super_block
 print("Eigen values are: ", evals)
 print("Ground state energy = ", min(evals))
+plot(left_block.num_sites, right_block.num_sites, None)  # show geometry
 print("number of left sites = ", left_block.num_sites)
 print("number of right sites = ", right_block.num_sites)

@@ -1,6 +1,7 @@
 import numpy as np
 import sys
 
+
 def tensor_prod(A, B):
     """Makes the tensor product of two matrices."""
 
@@ -52,9 +53,27 @@ class Logger:
         self.log.write(message)
 
     def flush(self):
-        #this flush method is needed for python 3 compatibility.
-        #this handles the flush command by doing nothing.
-        #you might want to specify some extra behavior here.
+        # this flush method is needed for python 3 compatibility.
+        # this handles the flush command by doing nothing.
         pass
 
+
 sys.stdout = Logger()
+
+
+def plot(left_size, right_size, growing_side):
+    """ For plotting the position of bond that partitions the superblock"""
+    if growing_side not in [None, "left", "right"]:
+        print("Growing side must be left or right")
+        raise
+    site = u"\u25EF  "
+    rarrow = u"\u2192"
+    larrow = u"\u2190"
+    left_block = " ".join([site] * left_size)
+    right_block = " ".join([site] * right_size)
+    if growing_side is None:
+        print("Geometry: ", left_block + "||  " + right_block)
+    elif growing_side == "left":
+        print("Geometry: ", left_block + "||" + rarrow + "  " + right_block)
+    else:
+        print("Geometry: ", left_block + larrow  + "||  " + right_block)

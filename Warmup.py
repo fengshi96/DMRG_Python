@@ -1,7 +1,7 @@
 import numpy as np
 from Block import Block
 from Memory import Memory
-from helper import truncation
+from helper import plot
 from Wavefunction import Wavefunction
 
 
@@ -20,6 +20,7 @@ def warmup(num_sites, dmax, interaction):
     iteration = 1
     while True:
         storage.snapshot(left_block, right_block, None)
+        plot(left_block.num_sites,right_block.num_sites, None) # show geometry
         if iteration >= block_sites:
             break
 
@@ -66,7 +67,7 @@ def warmup(num_sites, dmax, interaction):
         iteration += 1
 
     print(super_block.dim)
-    # evals, evecs = np.linalg.eigh(super_block.block_operators["block_ham"])
+    evals, evecs = np.linalg.eigh(super_block.block_operators["block_ham"])
     print("(iDMRG)Eigen values are: ", evals)
     print("(iDMRG)Ground state energy = ", min(evals))
     print("(iDMRG)number of left sites = ", left_block.num_sites)
