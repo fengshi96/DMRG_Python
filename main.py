@@ -1,7 +1,7 @@
 import sys
 from Warmup import *
 from Wavefunction import Wavefunction
-from helper import Logger
+from helper import Logger, plot
 
 # for exporting the logfile
 sys.stdout = Logger()
