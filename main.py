@@ -7,7 +7,7 @@ from helper import Logger
 sys.stdout = Logger()
 
 # Warm up by infinite size DMRG
-num_sites = 16
+num_sites = 32
 dmax = 22
 interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]]
 left_block, right_block, storage = warmup(num_sites, dmax, interaction)
