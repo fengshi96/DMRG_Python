@@ -17,6 +17,6 @@ Block.py: A class representing block or sub-block in the system, with attributes
 Memory.py: A class for the storage of temporary results in different steps, useful in both infinite and finite size DMRG. 
         subject to update
 
-helper.py: Defines tensor product, export logfile, and plot chain geometry
+helper.py: Defines tensor product and truncation function. Also used for exporting logfile and showing chain geometry
            
 logfile.log: the output file, printing geometry, Hilbert space size ... etc, for every step in the algorithm
