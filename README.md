@@ -17,3 +17,4 @@ Memory.py: A class for the storage of temporary results in different steps, usef
 
 helper.py: Defines tensor product, export logfile, and plot chain geometry
            
+logfile.log: the output file, printing geometry, Hilbert space size ... etc, for every step in the algorithm
