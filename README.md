@@ -10,7 +10,7 @@ main.py: Finite size DMRG
 Warmup.py: For warming up the finite size algorithm, containing two functions:
            infinite sie DMRG and Sweep.
 
-Wavefunction.py A class representing wavefunction, formalized as a bipartite universe.
+Wavefunction.py: A class representing wavefunction, formalized as a bipartite universe.
 
 Block.py: A class representing block or sub-block in the system, with attributes needed for both infinite and finite size DMRG
 
