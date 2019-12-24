@@ -8,7 +8,7 @@ The code is developed under Block DMRG formalism (not Matrix Product States). Th
 main.py: Finite size DMRG
 
 Warmup.py: For warming up the finite size algorithm, containing two functions:
-           infinite sie DMRG and Sweep.
+           infinite size DMRG and Sweep.
 
 Wavefunction.py: A class representing wavefunction, formalized as a bipartite universe.
 
