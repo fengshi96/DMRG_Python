@@ -12,7 +12,7 @@ Warmup.py: For warming up the finite size algorithm, containing two functions:
 
 Block.py: A class representing Block, with attributes needed for both infinite and finite size DMRG
 
-Memory: A class for the storage of temporary results in different steps, useful in both infinite and finite size DMRG. 
+Memory.py: A class for the storage of temporary results in different steps, useful in both infinite and finite size DMRG. 
         subject to update
 
 helper.py: Defines tensor product, export logfile, and plot chain geometry
