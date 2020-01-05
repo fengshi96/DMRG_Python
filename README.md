@@ -1,4 +1,4 @@
-# (Finite Size) Density Matrix Renormalization Group -- Python
+# Finite Size Density Matrix Renormalization Group -- Python Code
 
 Solves for ground state of a spin-1/2 Heisenberg chain - A toy DMRG realization by Python
 
