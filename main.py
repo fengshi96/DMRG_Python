@@ -6,9 +6,9 @@ from helper import Logger, plot
 # for exporting the logfile
 sys.stdout = Logger()
 
-num_sites = 32 # total number of sites in the chain
-dmax = 25 # maximal number of states to keep
-interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]] # define isotropic Heisenberg interaction
+num_sites = 32  # total number of sites in the chain
+dmax = 25  # maximal number of states to keep
+interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]]  # define isotropic Heisenberg interaction
 
 # invalid input
 if num_sites < 4 or num_sites % 2 != 0:
@@ -17,8 +17,8 @@ if num_sites < 4 or num_sites % 2 != 0:
 # Warm up by infinite size DMRG
 left_block, right_block, storage = warmup(num_sites, dmax, interaction)
 
-num_sweeps = 3 # define the total number of sweeps
-half_sweeps = 0 # for iteration, begin at 0
+num_sweeps = 3  # define the total number of sweeps
+half_sweeps = 0  # for iteration, begin at 0
 super_block = left_block.glue(right_block, interaction)
 print("(fDMRG)left_block.dim before sweep is ", left_block.dim)
 
