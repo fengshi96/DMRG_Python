@@ -13,10 +13,10 @@ class Block:
 
         if dim < 1:
             print("Site dim must be at least 1")
-            raise
+            raise ValueError
         if side not in ["left", "right"]:
             print("Parameter Error: side must be left or right")
-            raise
+            raise ValueError
 
         self.dim = dim  # size of Hilbert space
         self.num_sites = int(np.log2(self.dim))  # number of sites
