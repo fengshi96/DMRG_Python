@@ -26,6 +26,7 @@ class Block:
                                "s_p": np.array([[0, 1], [0, 0]]),
                                "s_m": np.array([[0, 0], [1, 0]])}
         # attributes in a Block object: block_ham: Hamiltonian; block_op = s_z, s_m, s_p: the right end op (2*2)
+        # A single site is an "ill-defined" block, so its Hamiltonian is manually set to 0 for later iterations.
         if dim == 2:
             self.block_operators = {"id": np.eye(self.dim, self.dim),
                                     "block_ham": np.zeros((self.dim, self.dim)),
