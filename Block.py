@@ -34,6 +34,7 @@ class Block:
                                     "s_p": np.array([[0, 1], [0, 0]]),
                                     "s_m": np.array([[0, 0], [1, 0]])}
 
+        # blocks that have more than 1 site
         if dim > 2:
             if self.side == "left":
                 self.block_operators = {"id": np.eye(self.dim, self.dim),
