@@ -6,12 +6,12 @@ from helper import Logger, plot
 # for exporting the logfile
 sys.stdout = Logger()
 
-num_sites = 24 # total number of sites in the chain
-dmax = 22 # maximal number of states to keep
+num_sites = 32 # total number of sites in the chain
+dmax = 25 # maximal number of states to keep
 interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]] # define isotropic Heisenberg interaction
 
 # invalid input
-if num_sites < 4 or num_sites%2 != 0:
+if num_sites < 4 or num_sites % 2 != 0:
     raise TypeError("invalid input. Total number of sites must be larger than 4, and it must be an even number")
 
 # Warm up by infinite size DMRG
