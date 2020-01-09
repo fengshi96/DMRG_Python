@@ -19,11 +19,11 @@ super_block = left_block.glue(right_block, interaction)
 print("(fDMRG)left_block.dim before sweep is ", left_block.dim)
 
 while half_sweeps < 2 * num_sweeps:
-    print("!!left storage, ", storage.left_dim)
-    print("!!right storage, ", storage.right_dim)
     rsize_max = int(right_block.num_sites)
     # left to right
     for rsize in range(rsize_max - 1, 0, -1):
+        print("[storage] left_dim in  storage, ", storage.left_dim)
+        print("[storage] right_dim in storage, ", storage.right_dim)
         print("rsize = ", rsize)
         sweep("left", left_block, right_block, interaction, storage)
         plot(left_block.num_sites, right_block.num_sites, "left")  # show geometry
@@ -68,8 +68,7 @@ while half_sweeps < 2 * num_sweeps:
         # Take a picture
         storage.snapshot(left_block, right_block, "left")
 
-    storage.right_operators = []
-    storage.right_dim = []
+    storage.erase("right")
     half_sweeps += 1
     print("--------------This is the end of " + str(half_sweeps) + "th Half-Sweep (L2R)--------------")
 
@@ -81,6 +80,8 @@ while half_sweeps < 2 * num_sweeps:
         lsize_max = int(left_block.num_sites)
 
     for lsize in range(lsize_max - 1, 0, -1):
+        print("[storage] left_dim in  storage, ", storage.left_dim)
+        print("[storage] right_dim in storage, ", storage.right_dim)
         print("lsize = ", lsize)
         print("left_block, right_block = ", left_block.dim, right_block.dim)
         sweep("right", left_block, right_block, interaction, storage)
@@ -124,8 +125,7 @@ while half_sweeps < 2 * num_sweeps:
         # Take a picture
         storage.snapshot(left_block, right_block, "right")
 
-    storage.left_operators = []
-    storage.left_dim = []
+    storage.erase("left")
     half_sweeps += 1
     print("--------------This is the end of " + str(half_sweeps) + "th Half-Sweep (R2L)--------------")
 

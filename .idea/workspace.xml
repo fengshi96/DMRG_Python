@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7d0d0700-c00e-44c2-98d3-12e127f8bb8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Memory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/testfile.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +52,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="Block" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true">
@@ -65,6 +69,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Block.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Memory" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DMRG_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/IDE/anaconda3/envs/DMRG_Python/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Memory.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,10 +192,12 @@
       <item itemvalue="Python.Block" />
       <item itemvalue="Python.helper" />
       <item itemvalue="Python.testfile" />
+      <item itemvalue="Python.Memory" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.Memory" />
         <item itemvalue="Python.testfile" />
         <item itemvalue="Python.helper" />
         <item itemvalue="Python.Block" />
@@ -205,6 +233,16 @@
       <workItem from="1576868787110" duration="1112000" />
       <workItem from="1576870217687" duration="3132000" />
       <workItem from="1576873550126" duration="2232000" />
+      <workItem from="1576876557936" duration="39000" />
+      <workItem from="1576876870300" duration="76000" />
+      <workItem from="1576886872267" duration="373000" />
+      <workItem from="1576900105050" duration="1661000" />
+      <workItem from="1576957238633" duration="10000" />
+      <workItem from="1576957257473" duration="130000" />
+      <workItem from="1577047195206" duration="353000" />
+      <workItem from="1577402353949" duration="113000" />
+      <workItem from="1577813816385" duration="25000" />
+      <workItem from="1578602601356" duration="5505000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1576868208498</created>
@@ -283,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576875531885</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Dec 20 16:16">
+      <created>1576876583584</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1576876583584</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +337,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="Dec 20 16:16" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dec 20 16:16" />
   </component>
   <component name="WindowStateProjectService">
     <state x="330" y="150" width="1084" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576856313489">
@@ -303,13 +349,18 @@
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
     <state x="673" y="332" width="564" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576855668481" />
-    <state x="525" y="122" width="860" height="817" key="CommitChangelistDialog2" timestamp="1576875531809">
+    <state x="643" y="255" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576957243105">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
-    <state x="525" y="122" width="860" height="817" key="CommitChangelistDialog2/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576875531809" />
-    <state x="182" y="116" width="1536" height="837" key="DiffContextDialog" timestamp="1576867712305">
+    <state x="643" y="255" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576957243105" />
+    <state x="525" y="122" width="860" height="817" key="CommitChangelistDialog2" timestamp="1576876583480">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
+    <state x="525" y="122" width="860" height="817" key="CommitChangelistDialog2/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576876583480" />
+    <state x="182" y="116" width="1536" height="837" key="DiffContextDialog" timestamp="1578607456174">
+      <screen x="0" y="27" width="1920" height="1001" />
+    </state>
+    <state x="182" y="116" width="1536" height="837" key="DiffContextDialog/0.27.1920.1001/1920.149.1920.1080@0.27.1920.1001" timestamp="1578607456174" />
     <state x="182" y="116" width="1536" height="837" key="DiffContextDialog/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576867712305" />
     <state x="749" y="445" key="Github.CreateGistDialog" timestamp="1576868915716">
       <screen x="0" y="27" width="1920" height="1001" />
@@ -323,47 +374,54 @@
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
     <state x="742" y="234" width="425" height="593" key="Github.UntrackedFilesDialog/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576867911927" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.bottom" timestamp="1576873350221">
+    <state width="1920" height="1015" key="GridCell.Tab.0.bottom" timestamp="1578607991453">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
-    <state width="1920" height="1015" key="GridCell.Tab.0.bottom/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576873350221" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.center" timestamp="1576873350221">
+    <state width="1920" height="1015" key="GridCell.Tab.0.bottom/0.27.1920.1001/1920.149.1920.1080@0.27.1920.1001" timestamp="1578607991453" />
+    <state width="1920" height="1015" key="GridCell.Tab.0.bottom/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1577047547522" />
+    <state width="1920" height="1015" key="GridCell.Tab.0.center" timestamp="1578607991452">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
-    <state width="1920" height="1015" key="GridCell.Tab.0.center/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576873350221" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.left" timestamp="1576873350221">
+    <state width="1920" height="1015" key="GridCell.Tab.0.center/0.27.1920.1001/1920.149.1920.1080@0.27.1920.1001" timestamp="1578607991452" />
+    <state width="1920" height="1015" key="GridCell.Tab.0.center/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1577047547522" />
+    <state width="1920" height="1015" key="GridCell.Tab.0.left" timestamp="1578607991452">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
-    <state width="1920" height="1015" key="GridCell.Tab.0.left/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576873350221" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.right" timestamp="1576873350221">
+    <state width="1920" height="1015" key="GridCell.Tab.0.left/0.27.1920.1001/1920.149.1920.1080@0.27.1920.1001" timestamp="1578607991452" />
+    <state width="1920" height="1015" key="GridCell.Tab.0.left/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1577047547522" />
+    <state width="1920" height="1015" key="GridCell.Tab.0.right" timestamp="1578607991452">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
-    <state width="1920" height="1015" key="GridCell.Tab.0.right/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576873350221" />
-    <state x="692" y="97" width="1022" height="737" key="SettingsEditor" timestamp="1576859084091">
+    <state width="1920" height="1015" key="GridCell.Tab.0.right/0.27.1920.1001/1920.149.1920.1080@0.27.1920.1001" timestamp="1578607991452" />
+    <state width="1920" height="1015" key="GridCell.Tab.0.right/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1577047547522" />
+    <state x="794" y="150" width="1022" height="737" key="SettingsEditor" timestamp="1576876922538">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
-    <state x="692" y="97" width="1022" height="737" key="SettingsEditor/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576859084091" />
+    <state x="794" y="150" width="1022" height="737" key="SettingsEditor/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576876922538" />
     <state x="689" y="258" width="540" height="524" key="StructurePopup" timestamp="1576856406827">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
     <state x="689" y="258" width="540" height="524" key="StructurePopup/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576856406827" />
-    <state x="555" y="263" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1576875536638">
+    <state x="555" y="263" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1576876589816">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
-    <state x="555" y="263" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576875536638" />
-    <state x="616" y="355" key="com.intellij.ide.util.TipDialog" timestamp="1576876558184">
+    <state x="555" y="263" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576876589816" />
+    <state x="616" y="355" key="com.intellij.ide.util.TipDialog" timestamp="1578602602236">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
-    <state x="616" y="355" key="com.intellij.ide.util.TipDialog/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576876558184" />
+    <state x="616" y="355" key="com.intellij.ide.util.TipDialog/0.27.1920.1001/1920.149.1920.1080@0.27.1920.1001" timestamp="1578602602236" />
+    <state x="616" y="355" key="com.intellij.ide.util.TipDialog/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1578333685076" />
+    <state x="616" y="355" key="com.intellij.ide.util.TipDialog/0.27.1920.1001@0.27.1920.1001" timestamp="1576900109722" />
     <state x="728" y="447" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576873171723">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
     <state x="728" y="447" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576873171723" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DMRG_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1576872925268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DMRG_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1578607991445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DMRG_Python$helper.coverage" NAME="helper Coverage Results" MODIFIED="1576863063910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DMRG_Python$Block.coverage" NAME="Block Coverage Results" MODIFIED="1576856438805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DMRG_Python$testfile.coverage" NAME="testfile Coverage Results" MODIFIED="1576872359261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DMRG_Python$testfile.coverage" NAME="testfile Coverage Results" MODIFIED="1578606527246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DMRG_Python$Memory.coverage" NAME="Memory Coverage Results" MODIFIED="1578607817514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

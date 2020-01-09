@@ -33,3 +33,16 @@ class Memory:
             print("Bias = right is true")
             self.right_dim.append(right_block.dim)
             self.right_operators.append(right_block.block_operators.copy())
+
+    def erase(self, side="left"):
+        """ Erases memory of left or right block """
+        if side not in ["left", "right"]:
+            print("side must be left or right")
+            raise
+
+        if side == "right":
+            self.right_operators = [self.right_operators[0].copy()]
+            self.right_dim = [self.right_dim[0]]
+        else:
+            self.left_operators = [self.left_operators[0].copy()]
+            self.left_dim = [self.left_dim[0]]
