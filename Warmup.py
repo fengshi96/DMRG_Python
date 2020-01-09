@@ -73,7 +73,7 @@ def warmup(num_sites, dmax, interaction):
     print("(iDMRG)Eigen values are: ", evals)
     print("(iDMRG)Ground state energy = ", min(evals))
     print("(iDMRG)number of left sites = ", left_block.num_sites)
-
+    print("--------------This is the end of iDMRG --------------")
     return left_block, right_block, storage
 
 

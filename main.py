@@ -6,14 +6,13 @@ from helper import Logger, plot
 # for exporting the logfile
 sys.stdout = Logger()
 
-num_sites = 16 # total number of sites in the chain
+num_sites = 24 # total number of sites in the chain
 dmax = 22 # maximal number of states to keep
 interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]] # define isotropic Heisenberg interaction
 
 # invalid input
 if num_sites < 4 or num_sites%2 != 0:
-    print("invalid input. total number of sites must be larger than 4, and it must be an even number")
-    raise
+    raise TypeError("invalid input. Total number of sites must be larger than 4, and it must be an even number")
 
 # Warm up by infinite size DMRG
 left_block, right_block, storage = warmup(num_sites, dmax, interaction)
@@ -73,6 +72,7 @@ while half_sweeps < 2 * num_sweeps:
         # Take a picture
         storage.snapshot(left_block, right_block, "left")
 
+    # Erase the right block memory
     storage.erase("right")
     half_sweeps += 1
     print("--------------This is the end of " + str(half_sweeps) + "th Half-Sweep (L2R)--------------")
@@ -130,6 +130,7 @@ while half_sweeps < 2 * num_sweeps:
         # Take a picture
         storage.snapshot(left_block, right_block, "right")
 
+    # Erase the left block memory
     storage.erase("left")
     half_sweeps += 1
     print("--------------This is the end of " + str(half_sweeps) + "th Half-Sweep (R2L)--------------")

@@ -117,10 +117,7 @@ class Block:
             block_A_op = interaction[i][0]
             block_B_op = interaction[i][1]
             param = interaction[i][2]
-            # print(i,self.block_operators[block_A_op].shape,block_B.block_operators[block_B_op].shape)
             if self.side == "left":
-                # print("grown but not yet truncated",i,super_block.block_operators["block_ham"].shape,
-                # self.block_operators[block_A_op].shape,block_B.block_operators[block_B_op].shape)
                 super_block.block_operators["block_ham"] += tensor_prod(self.block_operators[block_A_op],
                                                                         block_B.block_operators[block_B_op]) * param
 

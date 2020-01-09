@@ -43,6 +43,8 @@ class Memory:
         if side == "right":
             self.right_operators = [self.right_operators[0].copy()]
             self.right_dim = [self.right_dim[0]]
+            print("Right block memory is erased")
         else:
             self.left_operators = [self.left_operators[0].copy()]
             self.left_dim = [self.left_dim[0]]
+            print("Left block memory is erased")
