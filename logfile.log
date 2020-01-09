@@ -1,0 +1,152 @@
+copy information from blocks
+Bias = None is true
+Geometry:  ◯  ||  ◯  
+(iDMRG)1th iteration
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+(iDMRG) truncated superblock:  (16, 16) (4, 4) (4, 4)
+copy information from blocks
+Bias = None is true
+Geometry:  ◯   ◯  ||  ◯   ◯  
+16
+(iDMRG)Eigen values are:  [-1.6160254  -0.95710678 -0.95710678 -0.95710678 -0.25       -0.25
+ -0.25        0.1160254   0.45710678  0.45710678  0.45710678  0.75
+  0.75        0.75        0.75        0.75      ]
+(iDMRG)Ground state energy =  -1.6160254037844384
+(iDMRG)number of left sites =  2
+--------------This is the end of iDMRG --------------
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+(fDMRG)left_block.dim before sweep is  4
+[storage] left_dim in  storage,  [2, 4]
+[storage] right_dim in storage,  [2, 4]
+rsize =  1
+(Sweep) The growing side is  left
+(After one step in Sweep) shrinking_block.dim =  2
+(After one step in Sweep) shrinking_block.num_sites =  1
+Geometry:  ◯   ◯   ◯  ||→  ◯  
+left_block.dim (The current growing side's dim) =  8
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+copy information from blocks
+Bias = left is true
+Right block memory is erased
+--------------This is the end of 1th Half-Sweep (L2R)--------------
+[storage] left_dim in  storage,  [2, 4, 8]
+[storage] right_dim in storage,  [2]
+lsize =  2
+left_block, right_block =  8 2
+(Sweep) The growing side is  right
+(After one step in Sweep) shrinking_block.dim =  4
+(After one step in Sweep) shrinking_block.num_sites =  2
+Geometry:  ◯   ◯  ←||  ◯   ◯  
+left_block, right_block (After dfmrg) =  4 4
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+copy information from blocks
+Bias = right is true
+[storage] left_dim in  storage,  [2, 4, 8]
+[storage] right_dim in storage,  [2, 4]
+lsize =  1
+left_block, right_block =  4 4
+(Sweep) The growing side is  right
+(After one step in Sweep) shrinking_block.dim =  2
+(After one step in Sweep) shrinking_block.num_sites =  1
+Geometry:  ◯  ←||  ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  2 8
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+copy information from blocks
+Bias = right is true
+Left block memory is erased
+--------------This is the end of 2th Half-Sweep (R2L)--------------
+[storage] left_dim in  storage,  [2]
+[storage] right_dim in storage,  [2, 4, 8]
+rsize =  2
+(Sweep) The growing side is  left
+(After one step in Sweep) shrinking_block.dim =  4
+(After one step in Sweep) shrinking_block.num_sites =  2
+Geometry:  ◯   ◯  ||→  ◯   ◯  
+left_block.dim (The current growing side's dim) =  4
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+copy information from blocks
+Bias = left is true
+[storage] left_dim in  storage,  [2, 4]
+[storage] right_dim in storage,  [2, 4, 8]
+rsize =  1
+(Sweep) The growing side is  left
+(After one step in Sweep) shrinking_block.dim =  2
+(After one step in Sweep) shrinking_block.num_sites =  1
+Geometry:  ◯   ◯   ◯  ||→  ◯  
+left_block.dim (The current growing side's dim) =  8
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+copy information from blocks
+Bias = left is true
+Right block memory is erased
+--------------This is the end of 3th Half-Sweep (L2R)--------------
+[storage] left_dim in  storage,  [2, 4, 8]
+[storage] right_dim in storage,  [2]
+lsize =  2
+left_block, right_block =  8 2
+(Sweep) The growing side is  right
+(After one step in Sweep) shrinking_block.dim =  4
+(After one step in Sweep) shrinking_block.num_sites =  2
+Geometry:  ◯   ◯  ←||  ◯   ◯  
+left_block, right_block (After dfmrg) =  4 4
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+copy information from blocks
+Bias = right is true
+[storage] left_dim in  storage,  [2, 4, 8]
+[storage] right_dim in storage,  [2, 4]
+lsize =  1
+left_block, right_block =  4 4
+(Sweep) The growing side is  right
+(After one step in Sweep) shrinking_block.dim =  2
+(After one step in Sweep) shrinking_block.num_sites =  1
+Geometry:  ◯  ←||  ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  2 8
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+copy information from blocks
+Bias = right is true
+Left block memory is erased
+--------------This is the end of 4th Half-Sweep (R2L)--------------
+[storage] left_dim in  storage,  [2]
+[storage] right_dim in storage,  [2, 4, 8]
+rsize =  2
+(Sweep) The growing side is  left
+(After one step in Sweep) shrinking_block.dim =  4
+(After one step in Sweep) shrinking_block.num_sites =  2
+Geometry:  ◯   ◯  ||→  ◯   ◯  
+left_block.dim (The current growing side's dim) =  4
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+copy information from blocks
+Bias = left is true
+[storage] left_dim in  storage,  [2, 4]
+[storage] right_dim in storage,  [2, 4, 8]
+rsize =  1
+(Sweep) The growing side is  left
+(After one step in Sweep) shrinking_block.dim =  2
+(After one step in Sweep) shrinking_block.num_sites =  1
+Geometry:  ◯   ◯   ◯  ||→  ◯  
+left_block.dim (The current growing side's dim) =  8
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+copy information from blocks
+Bias = left is true
+Right block memory is erased
+--------------This is the end of 5th Half-Sweep (L2R)--------------
+[storage] left_dim in  storage,  [2, 4, 8]
+[storage] right_dim in storage,  [2]
+lsize =  1
+left_block, right_block =  8 2
+(Sweep) The growing side is  right
+(After one step in Sweep) shrinking_block.dim =  4
+(After one step in Sweep) shrinking_block.num_sites =  2
+Geometry:  ◯   ◯  ←||  ◯   ◯  
+left_block, right_block (After dfmrg) =  4 4
+left block_A_extended.shape =  (16, 16) block_B_extended =  (16, 16)
+copy information from blocks
+Bias = right is true
+Left block memory is erased
+--------------This is the end of 6th Half-Sweep (R2L)--------------
+Eigen values are:  [-1.6160254  -0.95710678 -0.95710678 -0.95710678 -0.25       -0.25
+ -0.25        0.1160254   0.45710678  0.45710678  0.45710678  0.75
+  0.75        0.75        0.75        0.75      ]
+Ground state energy =  -1.6160254037844384
+Geometry:  ◯   ◯  ||  ◯   ◯  
+number of left sites =  2
+number of right sites =  2

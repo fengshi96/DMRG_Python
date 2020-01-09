@@ -6,7 +6,7 @@ from helper import Logger, plot
 # for exporting the logfile
 sys.stdout = Logger()
 
-num_sites = 32  # total number of sites in the chain
+num_sites = 4  # total number of sites in the chain
 dmax = 25  # maximal number of states to keep
 interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]]  # define isotropic Heisenberg interaction
 
@@ -33,41 +33,21 @@ while half_sweeps < 2 * num_sweeps:
         plot(left_block.num_sites, right_block.num_sites, "left")  # show geometry
         print("left_block.dim (The current growing side's dim) = ", left_block.dim)
         super_block = left_block.glue(right_block, interaction)
-
-        left_dim = left_block.dim
-        right_dim = right_block.dim
         evals, evecs = np.linalg.eigh(super_block.block_operators["block_ham"])  # diagonalize the super_block
 
         # bipartition of the ground state wavefunction
-        wf_gs = Wavefunction(left_dim, right_dim)
-        wf_gs.as_matrix = np.reshape(evecs[:, 0], (left_dim, right_dim))
+        wf_gs = Wavefunction(left_block.dim, right_block.dim)
+        wf_gs.as_matrix = np.reshape(evecs[:, 0], (left_block.dim, right_block.dim))
 
-        if left_dim > dmax:
-            print("Truncation")
-            left_rdm = wf_gs.rdm("right")
-            left_evals, left_evecs = np.linalg.eigh(left_rdm)
-            left_evecs_truncated = left_evecs[:, -dmax:]
-            left_evals_truncated = left_evals[-dmax:]
-            truncation_error = 1.0 - sum(left_evals_truncated)
-            print("truncation_error = ", truncation_error)
-
+        if left_block.dim > dmax:
             # Rotate all block_operators in left block if needed
-            left_block.truncate(left_evecs_truncated)
+            left_block.truncate(wf_gs, dmax, "left")
             left_block.dim = dmax
 
-        if right_dim > dmax:
-            print("Truncation")
-            right_rdm = wf_gs.rdm("left")
-            right_evals, right_evecs = np.linalg.eigh(right_rdm)
-            right_evecs_truncated = right_evecs[:, -dmax:]
-            right_evals_truncated = right_evals[-dmax:]
-
+        if right_block.dim > dmax:
             # Rotate all block_operators in right block
-            right_block.truncate(right_evecs_truncated)
+            right_block.truncate(wf_gs, dmax, "right")
             right_block.dim = dmax
-
-            truncation_error = 1.0 - sum(right_evals_truncated)
-            print("truncation_error = ", truncation_error)
 
         # Take a picture
         storage.snapshot(left_block, right_block, "left")
@@ -93,40 +73,22 @@ while half_sweeps < 2 * num_sweeps:
         plot(left_block.num_sites, right_block.num_sites, "right")  # show geometry
         print("left_block, right_block (After dfmrg) = ", left_block.dim, right_block.dim)
         super_block = left_block.glue(right_block, interaction)
-        left_dim = left_block.dim
-        right_dim = right_block.dim
         evals, evecs = np.linalg.eigh(super_block.block_operators["block_ham"])  # diagonalize the super_block
 
         # bipartition of the ground state wavefunction
-        wf_gs = Wavefunction(left_dim, right_dim)
-        wf_gs.as_matrix = np.reshape(evecs[:, 0], (left_dim, right_dim))
+        wf_gs = Wavefunction(left_block.dim, right_block.dim)
+        wf_gs.as_matrix = np.reshape(evecs[:, 0], (left_block.dim, right_block.dim))
 
-        if left_dim > dmax:
-            print("Truncation")
-            left_rdm = wf_gs.rdm("right")
-            left_evals, left_evecs = np.linalg.eigh(left_rdm)
-            left_evecs_truncated = left_evecs[:, -dmax:]
-            left_evals_truncated = left_evals[-dmax:]
-            truncation_error = 1.0 - sum(left_evals_truncated)
-            print("truncation_error = ", truncation_error)
-
+        if left_block.dim > dmax:
             # Rotate all block_operators in left block if needed
-            left_block.truncate(left_evecs_truncated)
+            left_block.truncate(wf_gs, dmax, "left")
             left_block.dim = dmax
 
-        if right_dim > dmax:
-            print("Truncation")
-            right_rdm = wf_gs.rdm("left")
-            right_evals, right_evecs = np.linalg.eigh(right_rdm)
-            right_evecs_truncated = right_evecs[:, -dmax:]
-            right_evals_truncated = right_evals[-dmax:]
-
+        if right_block.dim > dmax:
             # Rotate all block_operators in right block if needed
-            right_block.truncate(right_evecs_truncated)
+            right_block.truncate(wf_gs, dmax, "right")
             right_block.dim = dmax
 
-            truncation_error = 1.0 - sum(right_evals_truncated)
-            print("truncation_error = ", truncation_error)
         # Take a picture
         storage.snapshot(left_block, right_block, "right")
 

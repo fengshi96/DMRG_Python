@@ -126,9 +126,31 @@ class Block:
                                                                         self.block_operators[block_A_op]) * param
         return super_block
 
-    def truncate(self, truncation_matrix):
+    def truncate(self, wavefunction, dmax, side):
         """ Truncate (Rotate) all block_operators and the Hamiltonian into the truncated basis
             It is needed in both infinite and finite size DMRG
+
+            Parameters: wavefunction: a Wavefunction object
+                        dmax: maximal number of states to keep
+                        side: a string, the side attribute of the current block
          """
+
+        print("Truncate the block operators")
+        if side not in ["left", "right"]:
+            raise TypeError("side must be left or right")
+
+        if side == "left":
+            traceout_side = "right"
+        else:
+            traceout_side = "left"
+
+        rdm = wavefunction.rdm(traceout_side)  # solve reduced density matrix
+        evals, evecs = np.linalg.eigh(rdm)
+        evecs_truncated = evecs[:, -dmax:]
+        evals_truncated = evals[-dmax:]
+        truncation_error = 1.0 - sum(evals_truncated)
+        print("truncation_error = ", truncation_error)
+
+        truncation_matrix = evecs_truncated
         for op in self.block_operators.keys():
             self.block_operators[op] = truncation(self.block_operators[op], truncation_matrix)

@@ -34,36 +34,17 @@ def warmup(num_sites, dmax, interaction):
               left_block.block_operators["id"].shape, right_block.block_operators["id"].shape)
 
         if left_block.dim >= dmax:
-            print("Truncation")
-            left_dim = left_block.dim;
-            right_dim = right_block.dim
             evals, evecs = np.linalg.eigh(super_block.block_operators["block_ham"])  # diagonalize the super_block
 
             # bipartition of the ground state wavefunction
-            wf_gs = Wavefunction(left_dim, right_dim)
-            wf_gs.as_matrix = np.reshape(evecs[:, 0], (left_dim, right_dim))
-
-            # trace out a sub-block to get reduced density matrix
-            left_rdm = wf_gs.rdm("right")
-            right_rdm = wf_gs.rdm("left")
-            left_evals, left_evecs = np.linalg.eigh(left_rdm)
-            right_evals, right_evecs = np.linalg.eigh(right_rdm)
-
-            left_evecs_truncated = left_evecs[:, -dmax:]
-            right_evecs_truncated = right_evecs[:, -dmax:]
-            left_evals_truncated = left_evals[-dmax:]
-            right_evals_truncated = right_evals[-dmax:]
-            print("(iDMRG) right_evals_truncated.dim = ", right_evals_truncated.shape)
-
-            # calculate truncation error
-            truncation_error = 1.0 - sum(left_evals_truncated)
-            print("(iDMRG) truncation_error = ", truncation_error)
+            wf_gs = Wavefunction(left_block.dim, right_block.dim)
+            wf_gs.as_matrix = np.reshape(evecs[:, 0], (left_block.dim, right_block.dim))
 
             # Rotate all block_operators in left block
-            left_block.truncate(left_evecs_truncated)
+            left_block.truncate(wf_gs, dmax, "left")
             left_block.dim = dmax
             # Rotate all block_operators in right block
-            right_block.truncate(right_evecs_truncated)
+            right_block.truncate(wf_gs, dmax, "right")
             right_block.dim = dmax
 
         iteration += 1
