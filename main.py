@@ -9,6 +9,7 @@ sys.stdout = Logger()
 num_sites = 16  # total number of sites in the chain
 dmax = 22  # maximal number of states to keep
 interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]]  # define isotropic Heisenberg interaction
+#interaction = [["s_z", "s_z", -1], ["s_z", "id", -1], ["id", "s_z", -1]]  # define isotropic Heisenberg interaction
 
 # invalid input
 if num_sites < 4 or num_sites % 2 != 0:

@@ -34,11 +34,9 @@ def truncation(matrix_to_transform, transformation_matrix):
     """
 
     if matrix_to_transform.shape[0] != matrix_to_transform.shape[1]:
-        print("Cannot transform a non-square matrix")
-        raise
+        raise TypeError("Cannot transform a non-square matrix")
     if matrix_to_transform.shape[1] != transformation_matrix.shape[0]:
-        print("Matrix and transformation don't fit")
-        raise
+        raise TypeError("Matrix and transformation don't fit")
     tmp = np.dot(matrix_to_transform, transformation_matrix)
     return np.dot(np.conj(transformation_matrix.transpose()), tmp)
 
