@@ -24,37 +24,29 @@ class Block:
         self.site_operators = {"id": np.eye(2, 2),
                                "s_z": np.array([[0.5, 0], [0, -0.5]]),
                                "s_p": np.array([[0, 1], [0, 0]]),
-                               "s_m": np.array([[0, 0], [1, 0]])}
+                               "s_m": np.array([[0, 0], [1, 0]]),
+                               "s_x": np.array([[0, 0.5], [0.5, 0]])}
+        self.block_operators = {}
         # attributes in a Block object: block_ham: Hamiltonian; block_op = s_z, s_m, s_p: the right end op (2*2)
-        # A single site is an "ill-defined" block, so its Hamiltonian is manually set to 0 for later iterations.
+        # A single site block, so just copy the site operator
         if dim == 2:
-            self.block_operators = {"id": np.eye(self.dim, self.dim),
-                                    "block_ham": np.zeros((self.dim, self.dim)),
-                                    "s_z": np.array([[0.5, 0], [0, -0.5]]),
-                                    "s_p": np.array([[0, 1], [0, 0]]),
-                                    "s_m": np.array([[0, 0], [1, 0]])}
+            self.block_operators = self.site_operators.copy()
+            self.block_operators["block_ham"] = np.zeros((self.dim, self.dim))
 
-        # blocks that have more than 1 site
         if dim > 2:
+            # blocks that have more than 1 site.
+            # left and right
             if self.side == "left":
-                self.block_operators = {"id": np.eye(self.dim, self.dim),
-                                        "block_ham": np.zeros((self.dim, self.dim)),
-                                        "s_z": tensor_prod(np.eye(int(self.dim / 2), int(self.dim / 2)),
-                                                           np.array([[0.5, 0], [0, -0.5]])),
-                                        "s_p": tensor_prod(np.eye(int(self.dim / 2), int(self.dim / 2)),
-                                                           np.array([[0, 1], [0, 0]])),
-                                        "s_m": tensor_prod(np.eye(int(self.dim / 2), int(self.dim / 2)),
-                                                           np.array([[0, 0], [1, 0]]))}
+                for op in self.site_operators.keys():
+                    self.block_operators[op] = tensor_prod(np.eye(int(self.dim / 2), int(self.dim / 2)),
+                                                           self.site_operators[op])
+                self.block_operators["block_ham"] = np.zeros((self.dim, self.dim))
 
             if self.side == "right":
-                self.block_operators = {"id": np.eye(self.dim, self.dim),
-                                        "block_ham": np.zeros((self.dim, self.dim)),
-                                        "s_z": tensor_prod(np.array([[0.5, 0], [0, -0.5]]),
-                                                           np.eye(int(self.dim / 2), int(self.dim / 2))),
-                                        "s_p": tensor_prod(np.array([[0, 1], [0, 0]]),
-                                                           np.eye(int(self.dim / 2), int(self.dim / 2))),
-                                        "s_m": tensor_prod(np.array([[0, 0], [1, 0]]),
-                                                           np.eye(int(self.dim / 2), int(self.dim / 2)))}
+                for op in self.site_operators.keys():
+                    self.block_operators[op] = tensor_prod(self.site_operators[op],
+                                                           np.eye(int(self.dim / 2), int(self.dim / 2)))
+                self.block_operators["block_ham"] = np.zeros((self.dim, self.dim))
 
     def grow(self, interaction):
         """ For growing the left or right block, i.e. to include a new site into the block Hilbert space
@@ -89,15 +81,14 @@ class Block:
         self.dim *= 2
         self.num_sites += 1
         self.block_operators["block_ham"] = new_bh
-        self.block_operators["id"] = np.eye(self.dim, self.dim)
+        key = list(self.block_operators.keys())
+        key.remove("block_ham")
         if self.side == "left":
-            self.block_operators["s_z"] = tensor_prod(np.eye(2, 2), self.block_operators["s_z"])
-            self.block_operators["s_m"] = tensor_prod(np.eye(2, 2), self.block_operators["s_m"])
-            self.block_operators["s_p"] = tensor_prod(np.eye(2, 2), self.block_operators["s_p"])
-        if self.side == "right":
-            self.block_operators["s_z"] = tensor_prod(self.block_operators["s_z"], np.eye(2, 2))
-            self.block_operators["s_m"] = tensor_prod(self.block_operators["s_m"], np.eye(2, 2))
-            self.block_operators["s_p"] = tensor_prod(self.block_operators["s_p"], np.eye(2, 2))
+            for op in key:
+                self.block_operators[op] = tensor_prod(np.eye(2, 2), self.block_operators[op])
+        else:
+            for op in key:
+                self.block_operators[op] = tensor_prod(self.block_operators[op], np.eye(2, 2))
 
     def glue(self, block_B, interaction):
         """ Glue together this block with block B, which is an object in Block class
