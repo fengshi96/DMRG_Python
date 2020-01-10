@@ -58,15 +58,12 @@ class Block:
                 e.g. interaction = [[block_op_1, site_op_1, param],...,[block_op_N, site_op_N, param]]
         """
 
-        if self.dim == 2:
-            new_bh = np.zeros((self.dim * 2, self.dim * 2))
-        if self.dim > 2:
-            if self.side == "left":
-                new_bh = tensor_prod(self.block_operators["block_ham"],
-                                     np.eye(2, 2))  # extend the old block Hilbert space
-            if self.side == "right":
-                new_bh = tensor_prod(np.eye(2, 2),
-                                     self.block_operators["block_ham"])  # extend the old block Hilbert space
+        if self.side == "left":
+            new_bh = tensor_prod(self.block_operators["block_ham"],
+                                 np.eye(2, 2))  # extend the old block Hilbert space
+        if self.side == "right":
+            new_bh = tensor_prod(np.eye(2, 2),
+                                 self.block_operators["block_ham"])  # extend the old block Hilbert space
 
         for i in range(len(interaction)):
             block_op = interaction[i][0]
