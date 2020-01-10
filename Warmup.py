@@ -62,11 +62,10 @@ def sweep(growing_side, left_block, right_block, interaction, storage):
     """
     Apply one step in sweep: grow and shrink
     """
-    print("(Sweep) The growing side is ", growing_side)
-    if growing_side not in ('left', 'right'):
-        print("(Sweep) Growing side must be left or right.")
-        raise
 
+    if growing_side not in ('left', 'right'):
+        raise TypeError("(Sweep) Growing side must be left or right.")
+    print("(Sweep) The growing side is ", growing_side)
     if growing_side == "left":
         shrinking_block = right_block
         growing_side = left_block
