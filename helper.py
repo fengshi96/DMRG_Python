@@ -72,3 +72,10 @@ def plot(left_size, right_size, growing_side):
         print("Geometry: ", left_block + "||" + rarrow + "  " + right_block)
     else:
         print("Geometry: ", left_block + larrow + "||  " + right_block)
+
+
+def sort(evals, evecs):
+    index_ascend = np.argsort(evals)
+    evals_sorted = evals[index_ascend]
+    evecs_sorted = evecs[:, index_ascend]
+    return evals_sorted, evecs_sorted

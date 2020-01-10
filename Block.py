@@ -1,5 +1,5 @@
 import numpy as np
-from helper import tensor_prod, truncation
+from helper import tensor_prod, truncation, sort
 
 
 class Block:
@@ -139,9 +139,9 @@ class Block:
 
         rdm = wavefunction.rdm(traceout_side)  # solve reduced density matrix
         evals, evecs = np.linalg.eigh(rdm)
-        evecs_truncated = evecs[:, -dmax:]
-        evals_truncated = evals[-dmax:]
-        truncation_error = 1.0 - sum(evals_truncated)
+        evals_sorted, evecs_sorted = sort(evals, evecs)
+        evecs_truncated = evecs_sorted[:, -dmax:]
+        truncation_error = 1.0 - sum(evals_sorted[-dmax:])
         print("truncation_error = ", truncation_error)
 
         truncation_matrix = evecs_truncated
