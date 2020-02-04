@@ -48,14 +48,16 @@ class Block:
                                                            np.eye(int(self.dim / 2), int(self.dim / 2)))
                 self.block_operators["block_ham"] = np.zeros((self.dim, self.dim))
 
-    def grow(self, interaction):
+    def grow(self, interaction, field = None):
         """ For growing the left or right block, i.e. to include a new site into the block Hilbert space
         and update all operators of the block
 
         Parameters:
         -----------
                 interaction: a list of N by 2
+                field: a list of 3 by 2
                 e.g. interaction = [[block_op_1, site_op_1, param],...,[block_op_N, site_op_N, param]]
+                     field = [["s_x", h_x], ["s_y", h_y], ["s_z", h_z]]
         """
 
         if self.side == "left":

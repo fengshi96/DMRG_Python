@@ -5,7 +5,7 @@ from helper import plot
 from Wavefunction import Wavefunction
 
 
-def warmup(num_sites, dmax, interaction):
+def warmup(num_sites, dmax, interaction, field = None):
     """
     Or the infinite size DMRG algorithm - the preparation for finite size DMRG
     Parameters:
@@ -22,7 +22,7 @@ def warmup(num_sites, dmax, interaction):
     iteration = 1
     while True:
         storage.snapshot(left_block, right_block, None)
-        plot(left_block.num_sites,right_block.num_sites, None) # show geometry
+        plot(left_block.num_sites, right_block.num_sites, None) # show geometry
         if iteration >= block_sites:
             break
 
