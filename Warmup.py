@@ -5,7 +5,7 @@ from helper import plot
 from Wavefunction import Wavefunction
 
 
-def warmup(num_sites, dmax, interaction, field = []):
+def warmup(num_sites, dmax, interaction, field=[]):
     """
     Or the infinite size DMRG algorithm - the preparation for finite size DMRG
     Parameters:
