@@ -5,7 +5,7 @@ from helper import plot
 from Wavefunction import Wavefunction
 
 
-def warmup(num_sites, dmax, interaction, field = None):
+def warmup(num_sites, dmax, interaction, field = []):
     """
     Or the infinite size DMRG algorithm - the preparation for finite size DMRG
     Parameters:
@@ -13,9 +13,17 @@ def warmup(num_sites, dmax, interaction, field = None):
         dmax: the maximal number of states to keep
         interaction: interaction matrix between sites
     """
-
+    # initialize 2 spins on left and right.
     left_block = Block(2, "left")
     right_block = Block(2, "right")
+
+    # define single site Hamiltonian if field is present; otherwise single site Hamiltonian is zero
+    for i in range(len(field)):
+        onsite_op = field[i][0]
+        param = field[i][1]
+        left_block.block_operators["block_ham"] += left_block.site_operators[onsite_op] * param
+        right_block.block_operators["block_ham"] += right_block.site_operators[onsite_op] * param
+
     block_sites = num_sites / 2  # number of sites per sub block
     storage = Memory()
 
@@ -27,8 +35,8 @@ def warmup(num_sites, dmax, interaction, field = None):
             break
 
         print("(iDMRG)"+str(iteration) + "th iteration")
-        left_block.grow(interaction)
-        right_block.grow(interaction)
+        left_block.grow(interaction, field)
+        right_block.grow(interaction, field)
         super_block = left_block.glue(right_block, interaction)
         print("(iDMRG) truncated superblock: ", super_block.block_operators["block_ham"].shape,
               left_block.block_operators["id"].shape, right_block.block_operators["id"].shape)
@@ -58,7 +66,7 @@ def warmup(num_sites, dmax, interaction, field = None):
     return left_block, right_block, storage
 
 
-def sweep(growing_side, left_block, right_block, interaction, storage):
+def sweep(growing_side, left_block, right_block, interaction, field, storage):
     """
     Apply one step in sweep: grow and shrink
     """
@@ -78,7 +86,7 @@ def sweep(growing_side, left_block, right_block, interaction, storage):
         shrinking_block.dim = storage.left_dim[shrinking_block.num_sites - 2]
 
     # add one more site to the left block
-    growing_side.grow(interaction)
+    growing_side.grow(interaction, field)
     shrinking_block.num_sites -= 1
     print("(After one step in Sweep) shrinking_block.dim = ", shrinking_block.dim)
     print("(After one step in Sweep) shrinking_block.num_sites = ", shrinking_block.num_sites)

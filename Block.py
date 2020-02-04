@@ -48,7 +48,7 @@ class Block:
                                                            np.eye(int(self.dim / 2), int(self.dim / 2)))
                 self.block_operators["block_ham"] = np.zeros((self.dim, self.dim))
 
-    def grow(self, interaction, field = None):
+    def grow(self, interaction, field=[]):
         """ For growing the left or right block, i.e. to include a new site into the block Hilbert space
         and update all operators of the block
 
@@ -75,6 +75,19 @@ class Block:
                 new_bh += tensor_prod(self.block_operators[block_op], self.site_operators[site_op]) * param
             if self.side == "right":
                 new_bh += tensor_prod(self.site_operators[site_op], self.block_operators[block_op]) * param
+
+        for i in range(len(field)):
+            onsite_op = field[i][0]
+            param = field[i][1]
+            # at chain boundary
+            # if self.dim == 2:
+            #     new_bh += tensor_prod(self.block_operators[onsite_op], self.site_operators["id"]) * param
+            #     new_bh += tensor_prod(self.site_operators["id"], self.block_operators[onsite_op]) * param
+            # else:
+            if self.side == "left":
+                new_bh += tensor_prod(self.block_operators["id"], self.site_operators[onsite_op]) * param
+            if self.side == "right":
+                new_bh += tensor_prod(self.site_operators[onsite_op], self.block_operators["id"]) * param
 
         # update attributes
         self.dim *= 2

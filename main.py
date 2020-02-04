@@ -6,17 +6,18 @@ from helper import Logger, plot
 # for exporting the logfile
 sys.stdout = Logger()
 
-num_sites = 16  # total number of sites in the chain
+num_sites = 8  # total number of sites in the chain
 dmax = 22  # maximal number of states to keep
-interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]]  # define isotropic Heisenberg interaction
-#interaction = [["s_z", "s_z", -1], ["s_x", "id", -1]]  # define isotropic Heisenberg interaction (For onsite tests)
+#interaction = [["s_p", "s_m", 0.5], ["s_m", "s_p", 0.5], ["s_z", "s_z", 1]]  # define isotropic Heisenberg interaction
+field = [["s_x", -1]]
+interaction = [["s_z", "s_z", -1]]  # define isotropic Heisenberg interaction (For onsite tests)
 
 # invalid input
 if num_sites < 4 or num_sites % 2 != 0:
     raise TypeError("invalid input. Total number of sites must be larger than 4, and it must be an even number")
 
 # Warm up by infinite size DMRG
-left_block, right_block, storage = warmup(num_sites, dmax, interaction)
+left_block, right_block, storage = warmup(num_sites, dmax, interaction, field)
 
 num_sweeps = 3  # define the total number of sweeps
 half_sweeps = 0  # for iteration, begin at 0
@@ -30,10 +31,10 @@ while half_sweeps < 2 * num_sweeps:
         print("[storage] left_dim in  storage, ", storage.left_dim)
         print("[storage] right_dim in storage, ", storage.right_dim)
         print("rsize = ", rsize)
-        sweep("left", left_block, right_block, interaction, storage)
+        sweep("left", left_block, right_block, interaction, field, storage)
         plot(left_block.num_sites, right_block.num_sites, "left")  # show geometry
         print("left_block.dim (The current growing side's dim) = ", left_block.dim)
-        super_block = left_block.glue(right_block, interaction)
+        super_block = left_block.glue(right_block, interaction) #######################################
         evals, evecs = np.linalg.eigh(super_block.block_operators["block_ham"])  # diagonalize the super_block
 
         # bipartition of the ground state wavefunction
@@ -70,7 +71,7 @@ while half_sweeps < 2 * num_sweeps:
         print("[storage] right_dim in storage, ", storage.right_dim)
         print("lsize = ", lsize)
         print("left_block, right_block = ", left_block.dim, right_block.dim)
-        sweep("right", left_block, right_block, interaction, storage)
+        sweep("right", left_block, right_block, interaction, field, storage)
         plot(left_block.num_sites, right_block.num_sites, "right")  # show geometry
         print("left_block, right_block (After dfmrg) = ", left_block.dim, right_block.dim)
         super_block = left_block.glue(right_block, interaction)
@@ -104,3 +105,4 @@ print("Ground state energy = ", min(evals))
 plot(left_block.num_sites, right_block.num_sites, None)  # show geometry
 print("number of left sites = ", left_block.num_sites)
 print("number of right sites = ", right_block.num_sites)
+print("Memory of left block: ", storage.left_operators[0])
