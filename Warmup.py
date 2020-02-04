@@ -30,7 +30,7 @@ def warmup(num_sites, dmax, interaction, field=[]):
     iteration = 1
     while True:
         storage.snapshot(left_block, right_block, None)
-        plot(left_block.num_sites, right_block.num_sites, None) # show geometry
+        plot(left_block.num_sites, right_block.num_sites, None)  # show geometry
         if iteration >= block_sites:
             break
 

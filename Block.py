@@ -55,7 +55,7 @@ class Block:
         Parameters:
         -----------
                 interaction: a list of N by 2
-                field: a list of 3 by 2
+                field: a list of 3 by 2. [] by default
                 e.g. interaction = [[block_op_1, site_op_1, param],...,[block_op_N, site_op_N, param]]
                      field = [["s_x", h_x], ["s_y", h_y], ["s_z", h_z]]
         """

@@ -12,9 +12,9 @@ dmax = 22  # maximal number of states to keep
 field = [["s_x", -1]]
 interaction = [["s_z", "s_z", -1]]  # define isotropic Heisenberg interaction (For onsite tests)
 
-# invalid input
+# raise invalid input
 if num_sites < 4 or num_sites % 2 != 0:
-    raise TypeError("invalid input. Total number of sites must be larger than 4, and it must be an even number")
+    raise TypeError("invalid input. Total number of sites must be an even integer and larger than 4")
 
 # Warm up by infinite size DMRG
 left_block, right_block, storage = warmup(num_sites, dmax, interaction, field)
