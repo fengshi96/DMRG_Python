@@ -3,7 +3,7 @@ import numpy as np
 from helper import tensor_prod
 from Block import Block
 
-# My code: 4-site TFIM in OBC
+# My code: 4 site TFIM in OBC
 left_block = Block(2, "left")  # initialize left block as a spin-1/2 site
 right_block = Block(2, "right")  # initialize right block as a spin-1/2 site
 field = [["s_x", -1]]
