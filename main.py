@@ -15,6 +15,8 @@ def main(total, shellargs):
     sys.stdout = Logger()
 
     num_sites, dmax, interaction, field = param.readinput(inputdir)
+    print(" num_sites = ", num_sites, "\n", "#states to keep = ", dmax,
+          "\n", "interaction = ", interaction, "\n", "field = ", field, "\n \n")
 
     # raise invalid input
     if num_sites < 4 or num_sites % 2 != 0:

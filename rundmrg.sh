@@ -20,6 +20,7 @@ do
 
   # shellcheck disable=SC2046
   python ../../main.py $(pwd)/input.inp &> runForInput.cout
+  echo "H_$H finished"
   cd ..
 
 
