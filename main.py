@@ -5,15 +5,16 @@ from src.Wavefunction import Wavefunction
 from src.helper import Logger, plot
 
 
-def main(total, cmdargs):
-    if total != 1:
-        print(" ".join(str(x) for x in cmdargs))
-        raise ValueError('I did ask for arguments')
+def main(total, shellargs):
+    if total != 2:
+        print(" ".join(str(x) for x in shellargs))
+        raise ValueError('no arguments')
+    inputdir = str(shellargs[1])
 
     # for exporting the logfile
     sys.stdout = Logger()
 
-    num_sites, dmax, interaction, field = param.readinput("input.inp")
+    num_sites, dmax, interaction, field = param.readinput(inputdir)
 
     # raise invalid input
     if num_sites < 4 or num_sites % 2 != 0:
@@ -127,7 +128,6 @@ def main(total, cmdargs):
 
 
 if __name__ == '__main__':
-    sys.argv  # get the input argument
-    total = len(sys.argv)
-    cmdargs = sys.argv
-    main(total, cmdargs)
+    shellargs = sys.argv  # get the input argument
+    total = len(shellargs)
+    main(total, shellargs)

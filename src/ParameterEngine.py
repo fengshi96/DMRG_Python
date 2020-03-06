@@ -3,7 +3,7 @@ import re
 
 
 def readinput(filedir):
-    #filedir = "../input.inp"
+    # filedir = "../input.inp"
     file = open(filedir, 'r')
     lines = file.readlines()
     file.close()
@@ -27,4 +27,4 @@ def readinput(filedir):
 
     return num_sites, dmax, interaction, field
 
-#print(readinput("../input.inp"))
+# print(readinput("../input.inp"))
