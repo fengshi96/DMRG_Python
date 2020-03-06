@@ -1,7 +1,7 @@
 # This file is for draft only
 import numpy as np
-from helper import tensor_prod
-from Block import Block
+from src.helper import tensor_prod
+from src.Block import Block
 
 # My code: 4 site TFIM in OBC
 left_block = Block(2, "left")  # initialize left block as a spin-1/2 site

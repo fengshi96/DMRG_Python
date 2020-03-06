@@ -1,8 +1,8 @@
 import numpy as np
-from Block import Block
-from Memory import Memory
-from helper import plot
-from Wavefunction import Wavefunction
+from src.Block import Block
+from src.Memory import Memory
+from src.helper import plot
+from src.Wavefunction import Wavefunction
 
 
 def warmup(num_sites, dmax, interaction, field=[]):

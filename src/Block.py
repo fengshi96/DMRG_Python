@@ -1,5 +1,5 @@
 import numpy as np
-from helper import tensor_prod, truncation, sort
+from src.helper import tensor_prod, truncation, sort
 
 
 class Block:
