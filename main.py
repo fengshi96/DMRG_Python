@@ -126,7 +126,7 @@ def main(total, shellargs):
     rdm = wf_gs.rdm("right")
     EE_evals, EE_evecs = np.linalg.eigh(rdm)
     EE_evals = np.around(EE_evals, decimals=6)
-    print("Entanglement Spectrum: ", EE_evals)
+    print("Entanglement Spectrum: \n", *EE_evals)
 
 
 if __name__ == '__main__':

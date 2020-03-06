@@ -1,0 +1,19 @@
+### input file defines necessary input for dmrg executable
+
+# total number of sites in the chain
+num_sites=8
+
+# maximal number of states (of sub-block) to keep
+dmax=22
+
+# homogeneous field
+field=[["s_x", 1.65]]
+
+# n.n connector
+## e.g. isotropic Heisenberg: interaction = [["s_p", "s_m", spsmspsm], ["s_m", "s_p", smspsmsp], ["s_z", "s_z", -1]]
+interaction=[["s_z", "s_z", -1]]
+
+
+
+
+

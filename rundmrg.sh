@@ -7,7 +7,7 @@ Dmax=22
 
 cd runForInput || exit
 
-for H in $(seq 0.9 0.05 1.1)
+for H in $(seq 0.2 0.05 1.8)
 do
   mkdir -p H_$H
   cd H_$H || exit
@@ -25,7 +25,8 @@ do
 
 
 done
-cd ..
+cd ../entanglement
+python entspec.py
 
 
 

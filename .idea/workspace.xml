@@ -2,6 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d0d0700-c00e-44c2-98d3-12e127f8bb8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/entanglement/EE.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entanglement/entspec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runForInput/H_0.20/input.inp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runForInput/H_0.20/runForInput.cout" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runForInput/H_0.25/input.inp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runForInput/H_0.25/runForInput.cout" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runForInput/H_0.30/input.inp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runForInput/H_0.30/runForInput.cout" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runForInput/H_0.35/input.inp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runForInput/H_0.35/runForInput.cout" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runForInput/H_0.40/input.inp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runForInput/H_0.40/runForInput.cout" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rundmrg.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rundmrg.sh" afterDir="false" />
@@ -274,7 +286,7 @@
       <workItem from="1581046015881" duration="14000" />
       <workItem from="1581050304083" duration="9000" />
       <workItem from="1583373120425" duration="42000" />
-      <workItem from="1583509367108" duration="17138000" />
+      <workItem from="1583509367108" duration="19722000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1576868208498</created>
@@ -521,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583530495790</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Jan 9, 17:44">
+      <created>1583530852570</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1583530852570</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,11 +567,11 @@
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
     <state x="643" y="255" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576957243105" />
-    <state x="525" y="122" width="860" height="817" key="CommitChangelistDialog2" timestamp="1583530495715">
+    <state x="525" y="122" width="860" height="817" key="CommitChangelistDialog2" timestamp="1583530852484">
       <screen x="0" y="27" width="1920" height="1001" />
     </state>
     <state x="525" y="122" key="CommitChangelistDialog2/0.27.1920.1001/1920.0.1920.1080@0.27.1920.1001" timestamp="1581044002122" />
-    <state x="525" y="122" width="860" height="817" key="CommitChangelistDialog2/0.27.1920.1001/1920.146.1920.1080@0.27.1920.1001" timestamp="1583530495715" />
+    <state x="525" y="122" width="860" height="817" key="CommitChangelistDialog2/0.27.1920.1001/1920.146.1920.1080@0.27.1920.1001" timestamp="1583530852484" />
     <state x="525" y="122" width="860" height="817" key="CommitChangelistDialog2/0.27.1920.1001/1920.149.1920.1080@0.27.1920.1001" timestamp="1578627366262" />
     <state x="525" y="122" width="860" height="817" key="CommitChangelistDialog2/0.27.1920.1001/1920.253.1920.1080@0.27.1920.1001" timestamp="1576876583480" />
     <state x="525" y="122" width="860" height="817" key="CommitChangelistDialog2/0.27.1920.1001/1920.283.1920.1080@0.27.1920.1001" timestamp="1580836887045" />
