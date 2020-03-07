@@ -123,8 +123,7 @@ def main(total, shellargs):
     ES = np.around(ES_evals + 1e-15, decimals=6)
     EE = - np.around(np.dot(ES_evals, np.log(ES_evals)), decimals=6)
 
-    print("Entanglement Spectrum: \n", *ES)
-    print("Entanglement Entropy = ", EE)
+    print("Entanglement Spectrum: \n", *ES, "\nEntanglement Entropy =", EE)
 
 
 if __name__ == '__main__':

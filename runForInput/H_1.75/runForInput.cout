@@ -1,7 +1,7 @@
  num_sites =  8 
  #states to keep =  22 
  interaction =  [['s_z', 's_z', -1]] 
- field =  [['s_x', 1.75]] 
+ field =  [['s_x', -1.75]] 
  
 
 copy information from blocks
@@ -118,7 +118,7 @@ Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
-truncation_error =  0.0
+truncation_error =  1.1102230246251565e-16
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
@@ -197,7 +197,7 @@ Geometry:  ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯
 left_block, right_block (After dfmrg) =  4 44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
-truncation_error =  0.0
+truncation_error =  -1.7763568394002505e-15
 copy information from blocks
 Bias = right is true
 [storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
@@ -211,7 +211,7 @@ Geometry:  ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯
 left_block, right_block (After dfmrg) =  2 44
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
-truncation_error =  -1.9984014443252818e-15
+truncation_error =  -1.5543122344752192e-15
 copy information from blocks
 Bias = right is true
 Left block memory is erased
@@ -272,7 +272,7 @@ Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
-truncation_error =  0.0
+truncation_error =  1.1102230246251565e-16
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
@@ -351,7 +351,7 @@ Geometry:  ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯
 left_block, right_block (After dfmrg) =  4 44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
-truncation_error =  0.0
+truncation_error =  -1.7763568394002505e-15
 copy information from blocks
 Bias = right is true
 [storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
@@ -365,7 +365,7 @@ Geometry:  ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯
 left_block, right_block (After dfmrg) =  2 44
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
-truncation_error =  -1.9984014443252818e-15
+truncation_error =  -1.5543122344752192e-15
 copy information from blocks
 Bias = right is true
 Left block memory is erased
@@ -426,7 +426,7 @@ Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
-truncation_error =  0.0
+truncation_error =  1.1102230246251565e-16
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
@@ -482,6 +482,7 @@ copy information from blocks
 Bias = right is true
 Left block memory is erased
 --------------This is the end of 6th Half-Sweep (R2L)--------------
+left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
 Eigen values are:  [-7.12546117e+00 -5.83716820e+00 -5.73112717e+00 -5.57916505e+00
  -5.40688929e+00 -5.23720955e+00 -5.08813849e+00 -4.97284072e+00
  -4.90022856e+00 -4.44283420e+00 -4.29087208e+00 -4.18483105e+00
@@ -549,4 +550,5 @@ Eigen values are:  [-7.12546117e+00 -5.83716820e+00 -5.73112717e+00 -5.57916505e
 Ground state energy =  -7.125461173954194
 Geometry:  ◯   ◯   ◯   ◯  ||  ◯   ◯   ◯   ◯  
 Entanglement Spectrum: 
- -0.0 -0.0 -0.0 -0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.005294 0.994706
+ 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.005294 0.994706 
+Entanglement Entropy = 0.033029

@@ -2,7 +2,7 @@
 
 #for TIFM
 Sz=-1
-Num_sites=8
+Num_sites=16
 Dmax=22
 
 cd runForInput || exit
@@ -13,7 +13,7 @@ do
   cd H_$H || exit
   cp ../../input_template.inp ./input.inp
 
-  sed -i 's/fieldfield/'$H'/g' input.inp
+  sed -i 's/fieldfield/'-$H'/g' input.inp
   sed -i 's/szszsz/'$Sz'/g' input.inp
   sed -i 's/numofsites/'$Num_sites'/g' input.inp
   sed -i 's/maxnumofstates/'$Dmax'/g' input.inp

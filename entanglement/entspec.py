@@ -21,44 +21,46 @@ def main(total, cmdargs):
 
 	### -------- onsite observables -------------------
 	ES_all = []
+	EE_all = []
 
 	# KzRange = np.round(np.arange(1.0, 5.1, 0.1),2)
 	HRange = grepfilenum("H", "../runForInput")
 	for H in HRange:
 		filename="../runForInput/H_"+str('%.2f' % H)+"/runForInput.cout"
-		string="Entanglement Spectrum: "
+		string1 = "Entanglement Spectrum: "
 
-
-		file = open(filename,'r')
+		file = open(filename, 'r')
 		lines = file.readlines()
 		file.close()
 
-		for i in range(0,len(lines)):
+		for i in range(0, len(lines)):
 			line = lines[i]
-			
-			if re.search(string, line, re.I):
-				matchindex=i+1
-				break
+
+			if re.search(string1, line, re.I):
+				matchindex = i+1
+
 		try:
 			matchindex
 		except NameError:
-			print ("***match string", string)
+			print ("***match string", string1)
 			print ('***MYERROR:matchindex in read_density function is not defined - no match found')
 
 		line = lines[matchindex].strip(' \n]').split(" ")
 		ES = np.zeros(len(line))
-		
+
+		EE = float(lines[matchindex+1].split(" = ")[-1])
 		for i in range(len(line)):
 			ES[i] = float(line[i])
-		
+
 		ES_all.append(ES)
-		#print(ES)		
+		EE_all.append(EE)
+		#print(ES)
 		#print(countES)
 		print(str(H)+" Done")
 	#print(ES_conter[1])
 	#print(len(KzRange))
 
-
+	#print(EE_all)
 
 	#===========================
 
@@ -66,19 +68,24 @@ def main(total, cmdargs):
 	gs = gridspec.GridSpec(2, 1)
 	gs.update(left=0.12, right=0.75, top=0.97, bottom=0.08, wspace=0.0, hspace=0.35)
 	ax = plt.subplot(111)
+	ax.plot(HRange, EE_all, marker='^', color='red', label="E.E.")
 	for i in range(len(HRange)): #len(KzRange)
+		#ax.scatter(HRange[i], EE_all[i], marker='^', color='red')
 		for j in range(len(ES_all[i])):  #len(ES_all[i])
 			ax.scatter(HRange[i], np.abs(ES_all[i][j]), marker='_', color='blue')
 			#print(ES_conter[i][j,0])
 	#ax.set_ylim(ymin=-15.5,ymax=-15)
-	plt.axvline(x=1, color='red', linestyle='--')
+	plt.axvline(x=1, color='black', linestyle='--')
 	plt.grid(which='major', linestyle='--',alpha=0.35)
 	#plt.xscale('log')
 	#plt.yscale('log')
 	plt.xticks(fontsize=18)
 	plt.yticks(fontsize=18)
 	plt.xlabel(r"$H/J$", fontsize=18)
-	plt.ylabel(r"$E.S.$", fontsize=18)	
+	plt.ylabel(r"$E.S.$", fontsize=18)
+
+	plt.legend(loc='best',ncol=1, fontsize=20, frameon=False,columnspacing=1,handlelength=1.0,handletextpad=0.4)
+
 	plt.savefig('EE.pdf', bbox_inches='tight', dpi=300)
 
 	#for i, txt in enumerate(n):
@@ -148,7 +155,7 @@ def split(mat):
 		for j in range(0,fatcols):
 			ja = j*orb+0
 			jb = j*orb+1
-	
+
 			AA[i,j] = mat[ia,ja]
 			BB[i,j] = mat[ib,jb]
 			AB[i,j] = mat[ia,jb]
@@ -195,19 +202,19 @@ def readMatrix(str):
 	for i in range(0,rows):
 		for j in range(i,cols):
 			m[j,i] = m[i,j]	   ### defined 2D Matrix
-			if(i==j): 
+			if(i==j):
 				m[i,j] = 2.0;
-	return m; 
+	return m;
 ##### ----------------------
 
-	
+
 def PrintMatrix(m):
 	string="""
 DegreesOfFreedom=1
 GeometryKind=LongRange
 GeometryOptions=none
 Connectors"""
-	
+
 	num_rows = len(m);
 	num_cols = m.shape[1] #len(m[0]) if m else 0
 	string += " "+str(num_rows)+" "+str(num_cols)
@@ -232,7 +239,7 @@ def grepfilenum(keyword, filedir):
 if __name__ == '__main__':
 	sys.argv ## get the input argument
 	total = len(sys.argv)
-	cmdargs = sys.argv	
+	cmdargs = sys.argv
 	main(total, cmdargs)
 
 

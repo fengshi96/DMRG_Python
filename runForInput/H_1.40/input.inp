@@ -7,7 +7,7 @@ num_sites=8
 dmax=22
 
 # homogeneous field
-field=[["s_x", 1.40]]
+field=[["s_x", -1.40]]
 
 # n.n connector
 ## e.g. isotropic Heisenberg: interaction = [["s_p", "s_m", spsmspsm], ["s_m", "s_p", smspsmsp], ["s_z", "s_z", -1]]
