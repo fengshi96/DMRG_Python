@@ -15,7 +15,7 @@ pi = 3.14159265
 def main(total, cmdargs):
 	if total != 1:
 			print (" ".join(str(x) for x in cmdargs))
-			raise ValueError('I did ask for arguments')
+			raise ValueError('I did not ask for arguments')
 	#Kz = str(cmdargs[1])
 
 
@@ -74,7 +74,7 @@ def main(total, cmdargs):
 		for j in range(len(ES_all[i])):  #len(ES_all[i])
 			ax.scatter(HRange[i], np.abs(ES_all[i][j]), marker='_', color='blue')
 			#print(ES_conter[i][j,0])
-	#ax.set_ylim(ymin=-15.5,ymax=-15)
+	#ax.set_ylim(ymin=0,ymax=0.1)
 	plt.axvline(x=1, color='black', linestyle='--')
 	plt.grid(which='major', linestyle='--',alpha=0.35)
 	#plt.xscale('log')

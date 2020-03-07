@@ -1,4 +1,4 @@
- num_sites =  8 
+ num_sites =  10 
  #states to keep =  22 
  interaction =  [['s_z', 's_z', -1]] 
  field =  [['s_x', -1.35]] 
@@ -25,168 +25,178 @@ left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
 copy information from blocks
 Bias = None is true
 Geometry:  ◯   ◯   ◯   ◯  ||  ◯   ◯   ◯   ◯  
-256
-(iDMRG)Eigen values are:  [-5.56305008 -4.6715165  -4.55859887 -4.40125696 -4.22776627 -4.06067046
- -3.9162234  -3.80570631 -3.73656169 -3.6670653  -3.50972339 -3.39680575
- -3.33623269 -3.22331506 -3.16913689 -3.06597315 -3.05621925 -3.02468983
- -2.91417274 -2.91177219 -2.89887734 -2.84502812 -2.8012551  -2.75443028
- -2.73211049 -2.72538665 -2.64391319 -2.58093959 -2.57476858 -2.50527218
- -2.4704225  -2.41384378 -2.40127788 -2.33178149 -2.30332669 -2.23418208
- -2.17443958 -2.16468568 -2.15887964 -2.08973502 -2.06152194 -2.02023862
- -2.00734377 -1.97921793 -1.90972153 -1.89442613 -1.86289671 -1.84057691
- -1.83385308 -1.75237962 -1.74997908 -1.72093544 -1.68940602 -1.683235
- -1.63946198 -1.57888893 -1.57648838 -1.57031737 -1.56359353 -1.52231021
- -1.50974431 -1.46597129 -1.41914647 -1.41179312 -1.40939258 -1.39682668
- -1.3426485  -1.30862938 -1.29887548 -1.26734606 -1.25205067 -1.23948477
- -1.22973087 -1.19820144 -1.16998837 -1.15442843 -1.14153357 -1.08768435
- -1.08528381 -1.07855997 -1.07238896 -1.00289256 -0.99708652 -0.97476672
- -0.96804288 -0.9279419  -0.89889826 -0.8584455  -0.82940187 -0.82359583
- -0.81742481 -0.75445121 -0.74792841 -0.68495481 -0.67878379 -0.67205996
- -0.65650002 -0.64393412 -0.5873554  -0.57443772 -0.55914232 -0.5276129
- -0.517859   -0.5052931  -0.47683831 -0.41709581 -0.41469527 -0.40734191
- -0.36051709 -0.34795119 -0.33819729 -0.33239125 -0.30417817 -0.26289485
- -0.25       -0.24759946 -0.23503356 -0.19375024 -0.1870264  -0.18085538
- -0.13708237 -0.10555294 -0.08323315 -0.07650931 -0.07410877 -0.06793775
- -0.03640833 -0.00736469  0.00736469  0.03640833  0.06793775  0.07410877
-  0.07650931  0.08323315  0.10555294  0.13708237  0.18085538  0.1870264
-  0.19375024  0.23503356  0.24759946  0.25        0.26289485  0.30417817
-  0.33239125  0.33819729  0.34795119  0.36051709  0.40734191  0.41469527
-  0.41709581  0.47683831  0.5052931   0.517859    0.5276129   0.55914232
-  0.57443772  0.5873554   0.64393412  0.65650002  0.67205996  0.67878379
-  0.68495481  0.74792841  0.75445121  0.81742481  0.82359583  0.82940187
-  0.8584455   0.89889826  0.9279419   0.96804288  0.97476672  0.99708652
-  1.00289256  1.07238896  1.07855997  1.08528381  1.08768435  1.14153357
-  1.15442843  1.16998837  1.19820144  1.22973087  1.23948477  1.25205067
-  1.26734606  1.29887548  1.30862938  1.3426485   1.39682668  1.40939258
-  1.41179312  1.41914647  1.46597129  1.50974431  1.52231021  1.56359353
-  1.57031737  1.57648838  1.57888893  1.63946198  1.683235    1.68940602
-  1.72093544  1.74997908  1.75237962  1.83385308  1.84057691  1.86289671
-  1.89442613  1.90972153  1.97921793  2.00734377  2.02023862  2.06152194
-  2.08973502  2.15887964  2.16468568  2.17443958  2.23418208  2.30332669
-  2.33178149  2.40127788  2.41384378  2.4704225   2.50527218  2.57476858
-  2.58093959  2.64391319  2.72538665  2.73211049  2.75443028  2.8012551
-  2.84502812  2.89887734  2.91177219  2.91417274  3.02468983  3.05621925
-  3.06597315  3.16913689  3.22331506  3.33623269  3.39680575  3.50972339
-  3.6670653   3.73656169  3.80570631  3.9162234   4.06067046  4.22776627
-  4.40125696  4.55859887  4.6715165   5.56305008]
-(iDMRG)Ground state energy =  -5.563050078438718
-(iDMRG)number of left sites =  4
+(iDMRG)4th iteration
+left block_A_extended.shape =  (1024, 1024) block_B_extended =  (1024, 1024)
+(iDMRG) truncated superblock:  (1024, 1024) (32, 32) (32, 32)
+Truncate the block operators
+truncation_error =  -8.881784197001252e-16
+Truncate the block operators
+truncation_error =  -1.5543122344752192e-15
+copy information from blocks
+Bias = None is true
+Geometry:  ◯   ◯   ◯   ◯   ◯  ||  ◯   ◯   ◯   ◯   ◯  
+1024
+(iDMRG)Eigen values are:  [-6.95975769 -6.08111671 -6.00113524 ...  6.00113524  6.08111671
+  6.95975769]
+(iDMRG)Ground state energy =  -6.959757685016531
+(iDMRG)number of left sites =  5
 --------------This is the end of iDMRG --------------
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
-(fDMRG)left_block.dim before sweep is  16
-[storage] left_dim in  storage,  [2, 4, 8, 16]
-[storage] right_dim in storage,  [2, 4, 8, 16]
+left block_A_extended.shape =  (484, 484) block_B_extended =  (484, 484)
+(fDMRG)left_block.dim before sweep is  22
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22]
+rsize =  4
+(Sweep) The growing side is  left
+(After one step in Sweep) shrinking_block.dim =  16
+(After one step in Sweep) shrinking_block.num_sites =  4
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯  
+left_block.dim (The current growing side's dim) =  44
+left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
+Truncate the block operators
+truncation_error =  -8.881784197001252e-16
+copy information from blocks
+Bias = left is true
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22]
 rsize =  3
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  8
 (After one step in Sweep) shrinking_block.num_sites =  3
-Geometry:  ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  32
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
+left_block.dim (The current growing side's dim) =  44
+left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 Truncate the block operators
-truncation_error =  -1.3322676295501878e-15
+truncation_error =  -8.881784197001252e-16
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22]
 rsize =  2
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  4
 (After one step in Sweep) shrinking_block.num_sites =  2
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
-truncation_error =  5.551115123125783e-16
+truncation_error =  2.220446049250313e-16
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22]
 rsize =  1
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  2
 (After one step in Sweep) shrinking_block.num_sites =  1
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
-truncation_error =  0.0
+truncation_error =  -6.661338147750939e-16
 copy information from blocks
 Bias = left is true
 Right block memory is erased
 --------------This is the end of 1th Half-Sweep (L2R)--------------
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2]
-lsize =  6
+lsize =  8
 left_block, right_block =  22 2
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  6
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  8
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
 left_block, right_block (After dfmrg) =  22 4
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4]
-lsize =  5
+lsize =  7
 left_block, right_block =  22 4
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  5
-Geometry:  ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  7
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 8
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4, 8]
-lsize =  4
+lsize =  6
 left_block, right_block =  22 8
+(Sweep) The growing side is  right
+(After one step in Sweep) shrinking_block.dim =  22
+(After one step in Sweep) shrinking_block.num_sites =  6
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  22 16
+left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
+copy information from blocks
+Bias = right is true
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16]
+lsize =  5
+left_block, right_block =  22 16
+(Sweep) The growing side is  right
+(After one step in Sweep) shrinking_block.dim =  22
+(After one step in Sweep) shrinking_block.num_sites =  5
+Geometry:  ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  22 32
+left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
+Truncate the block operators
+truncation_error =  -1.3322676295501878e-15
+copy information from blocks
+Bias = right is true
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22]
+lsize =  4
+left_block, right_block =  22 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  16
 (After one step in Sweep) shrinking_block.num_sites =  4
-Geometry:  ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  16 16
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
+Geometry:  ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  16 44
+left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
+Truncate the block operators
+truncation_error =  0.0
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22]
 lsize =  3
-left_block, right_block =  16 16
+left_block, right_block =  16 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  8
 (After one step in Sweep) shrinking_block.num_sites =  3
-Geometry:  ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  8 32
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
+Geometry:  ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  8 44
+left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 Truncate the block operators
-truncation_error =  -1.5543122344752192e-15
+truncation_error =  -4.440892098500626e-16
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
 lsize =  2
 left_block, right_block =  8 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  4
 (After one step in Sweep) shrinking_block.num_sites =  2
-Geometry:  ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  4 44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
-truncation_error =  -1.3322676295501878e-15
+truncation_error =  -1.5543122344752192e-15
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
 lsize =  1
 left_block, right_block =  4 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  2
 (After one step in Sweep) shrinking_block.num_sites =  1
-Geometry:  ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  2 44
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
@@ -196,317 +206,489 @@ Bias = right is true
 Left block memory is erased
 --------------This is the end of 2th Half-Sweep (R2L)--------------
 [storage] left_dim in  storage,  [2]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
-rsize =  6
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  8
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  6
-Geometry:  ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  8
+Geometry:  ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  4
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
-rsize =  5
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  7
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  5
-Geometry:  ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  7
+Geometry:  ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  8
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4, 8]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  6
+(Sweep) The growing side is  left
+(After one step in Sweep) shrinking_block.dim =  22
+(After one step in Sweep) shrinking_block.num_sites =  6
+Geometry:  ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯  
+left_block.dim (The current growing side's dim) =  16
+left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
+copy information from blocks
+Bias = left is true
+[storage] left_dim in  storage,  [2, 4, 8, 16]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  5
+(Sweep) The growing side is  left
+(After one step in Sweep) shrinking_block.dim =  22
+(After one step in Sweep) shrinking_block.num_sites =  5
+Geometry:  ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯  
+left_block.dim (The current growing side's dim) =  32
+left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
+Truncate the block operators
+truncation_error =  2.220446049250313e-16
+copy information from blocks
+Bias = left is true
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  4
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  16
 (After one step in Sweep) shrinking_block.num_sites =  4
-Geometry:  ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  16
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯  
+left_block.dim (The current growing side's dim) =  44
+left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
+Truncate the block operators
+truncation_error =  -1.5543122344752192e-15
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  3
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  8
 (After one step in Sweep) shrinking_block.num_sites =  3
-Geometry:  ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  32
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
+left_block.dim (The current growing side's dim) =  44
+left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 Truncate the block operators
-truncation_error =  -1.3322676295501878e-15
+truncation_error =  -1.7763568394002505e-15
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  2
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  4
 (After one step in Sweep) shrinking_block.num_sites =  2
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
-truncation_error =  5.551115123125783e-16
+truncation_error =  7.771561172376096e-16
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  1
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  2
 (After one step in Sweep) shrinking_block.num_sites =  1
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
-truncation_error =  0.0
+truncation_error =  -4.440892098500626e-16
 copy information from blocks
 Bias = left is true
 Right block memory is erased
 --------------This is the end of 3th Half-Sweep (L2R)--------------
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2]
-lsize =  6
+lsize =  8
 left_block, right_block =  22 2
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  6
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  8
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
 left_block, right_block (After dfmrg) =  22 4
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4]
-lsize =  5
+lsize =  7
 left_block, right_block =  22 4
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  5
-Geometry:  ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  7
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 8
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4, 8]
-lsize =  4
+lsize =  6
 left_block, right_block =  22 8
+(Sweep) The growing side is  right
+(After one step in Sweep) shrinking_block.dim =  22
+(After one step in Sweep) shrinking_block.num_sites =  6
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  22 16
+left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
+copy information from blocks
+Bias = right is true
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16]
+lsize =  5
+left_block, right_block =  22 16
+(Sweep) The growing side is  right
+(After one step in Sweep) shrinking_block.dim =  22
+(After one step in Sweep) shrinking_block.num_sites =  5
+Geometry:  ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  22 32
+left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
+Truncate the block operators
+truncation_error =  1.1102230246251565e-16
+copy information from blocks
+Bias = right is true
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22]
+lsize =  4
+left_block, right_block =  22 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  16
 (After one step in Sweep) shrinking_block.num_sites =  4
-Geometry:  ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  16 16
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
+Geometry:  ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  16 44
+left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
+Truncate the block operators
+truncation_error =  3.3306690738754696e-16
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22]
 lsize =  3
-left_block, right_block =  16 16
+left_block, right_block =  16 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  8
 (After one step in Sweep) shrinking_block.num_sites =  3
-Geometry:  ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  8 32
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
+Geometry:  ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  8 44
+left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 Truncate the block operators
-truncation_error =  -1.5543122344752192e-15
+truncation_error =  6.661338147750939e-16
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
 lsize =  2
 left_block, right_block =  8 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  4
 (After one step in Sweep) shrinking_block.num_sites =  2
-Geometry:  ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  4 44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
 truncation_error =  -1.3322676295501878e-15
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
 lsize =  1
 left_block, right_block =  4 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  2
 (After one step in Sweep) shrinking_block.num_sites =  1
-Geometry:  ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  2 44
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
-truncation_error =  -6.661338147750939e-16
+truncation_error =  -1.3322676295501878e-15
 copy information from blocks
 Bias = right is true
 Left block memory is erased
 --------------This is the end of 4th Half-Sweep (R2L)--------------
 [storage] left_dim in  storage,  [2]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
-rsize =  6
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  8
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  6
-Geometry:  ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  8
+Geometry:  ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  4
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
-rsize =  5
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  7
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  5
-Geometry:  ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  7
+Geometry:  ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  8
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4, 8]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  6
+(Sweep) The growing side is  left
+(After one step in Sweep) shrinking_block.dim =  22
+(After one step in Sweep) shrinking_block.num_sites =  6
+Geometry:  ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯  
+left_block.dim (The current growing side's dim) =  16
+left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
+copy information from blocks
+Bias = left is true
+[storage] left_dim in  storage,  [2, 4, 8, 16]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  5
+(Sweep) The growing side is  left
+(After one step in Sweep) shrinking_block.dim =  22
+(After one step in Sweep) shrinking_block.num_sites =  5
+Geometry:  ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯  
+left_block.dim (The current growing side's dim) =  32
+left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
+Truncate the block operators
+truncation_error =  -1.1102230246251565e-15
+copy information from blocks
+Bias = left is true
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  4
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  16
 (After one step in Sweep) shrinking_block.num_sites =  4
-Geometry:  ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  16
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯  
+left_block.dim (The current growing side's dim) =  44
+left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
+Truncate the block operators
+truncation_error =  1.9984014443252818e-15
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  3
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  8
 (After one step in Sweep) shrinking_block.num_sites =  3
-Geometry:  ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  32
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
+left_block.dim (The current growing side's dim) =  44
+left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 Truncate the block operators
-truncation_error =  -1.3322676295501878e-15
+truncation_error =  -6.661338147750939e-16
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  2
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  4
 (After one step in Sweep) shrinking_block.num_sites =  2
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
-Truncate the block operators
-truncation_error =  5.551115123125783e-16
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
-rsize =  1
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  2
-(After one step in Sweep) shrinking_block.num_sites =  1
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = left is true
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  1
+(Sweep) The growing side is  left
+(After one step in Sweep) shrinking_block.dim =  2
+(After one step in Sweep) shrinking_block.num_sites =  1
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
+left_block.dim (The current growing side's dim) =  44
+left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
+Truncate the block operators
+truncation_error =  -1.3322676295501878e-15
+copy information from blocks
+Bias = left is true
 Right block memory is erased
 --------------This is the end of 5th Half-Sweep (L2R)--------------
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2]
-lsize =  3
+lsize =  4
 left_block, right_block =  22 2
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  6
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  8
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
 left_block, right_block (After dfmrg) =  22 4
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4]
-lsize =  2
+lsize =  3
 left_block, right_block =  22 4
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  5
-Geometry:  ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  7
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 8
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4, 8]
-lsize =  1
+lsize =  2
 left_block, right_block =  22 8
 (Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  16
-(After one step in Sweep) shrinking_block.num_sites =  4
-Geometry:  ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  16 16
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
+(After one step in Sweep) shrinking_block.dim =  22
+(After one step in Sweep) shrinking_block.num_sites =  6
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  22 16
+left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
+copy information from blocks
+Bias = right is true
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16]
+lsize =  1
+left_block, right_block =  22 16
+(Sweep) The growing side is  right
+(After one step in Sweep) shrinking_block.dim =  22
+(After one step in Sweep) shrinking_block.num_sites =  5
+Geometry:  ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯  
+left_block, right_block (After dfmrg) =  22 32
+left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
+Truncate the block operators
+truncation_error =  7.771561172376096e-16
 copy information from blocks
 Bias = right is true
 Left block memory is erased
 --------------This is the end of 6th Half-Sweep (R2L)--------------
-left block_A_extended.shape =  (256, 256) block_B_extended =  (256, 256)
-Eigen values are:  [-5.56305008 -4.6715165  -4.55859887 -4.40125696 -4.22776627 -4.06067046
- -3.9162234  -3.80570631 -3.73656169 -3.6670653  -3.50972339 -3.39680575
- -3.33623269 -3.22331506 -3.16913689 -3.06597315 -3.05621925 -3.02468983
- -2.91417274 -2.91177219 -2.89887734 -2.84502812 -2.8012551  -2.75443028
- -2.73211049 -2.72538665 -2.64391319 -2.58093959 -2.57476858 -2.50527218
- -2.4704225  -2.41384378 -2.40127788 -2.33178149 -2.30332669 -2.23418208
- -2.17443958 -2.16468568 -2.15887964 -2.08973502 -2.06152194 -2.02023862
- -2.00734377 -1.97921793 -1.90972153 -1.89442613 -1.86289671 -1.84057691
- -1.83385308 -1.75237962 -1.74997908 -1.72093544 -1.68940602 -1.683235
- -1.63946198 -1.57888893 -1.57648838 -1.57031737 -1.56359353 -1.52231021
- -1.50974431 -1.46597129 -1.41914647 -1.41179312 -1.40939258 -1.39682668
- -1.3426485  -1.30862938 -1.29887548 -1.26734606 -1.25205067 -1.23948477
- -1.22973087 -1.19820144 -1.16998837 -1.15442843 -1.14153357 -1.08768435
- -1.08528381 -1.07855997 -1.07238896 -1.00289256 -0.99708652 -0.97476672
- -0.96804288 -0.9279419  -0.89889826 -0.8584455  -0.82940187 -0.82359583
- -0.81742481 -0.75445121 -0.74792841 -0.68495481 -0.67878379 -0.67205996
- -0.65650002 -0.64393412 -0.5873554  -0.57443772 -0.55914232 -0.5276129
- -0.517859   -0.5052931  -0.47683831 -0.41709581 -0.41469527 -0.40734191
- -0.36051709 -0.34795119 -0.33819729 -0.33239125 -0.30417817 -0.26289485
- -0.25       -0.24759946 -0.23503356 -0.19375024 -0.1870264  -0.18085538
- -0.13708237 -0.10555294 -0.08323315 -0.07650931 -0.07410877 -0.06793775
- -0.03640833 -0.00736469  0.00736469  0.03640833  0.06793775  0.07410877
-  0.07650931  0.08323315  0.10555294  0.13708237  0.18085538  0.1870264
-  0.19375024  0.23503356  0.24759946  0.25        0.26289485  0.30417817
-  0.33239125  0.33819729  0.34795119  0.36051709  0.40734191  0.41469527
-  0.41709581  0.47683831  0.5052931   0.517859    0.5276129   0.55914232
-  0.57443772  0.5873554   0.64393412  0.65650002  0.67205996  0.67878379
-  0.68495481  0.74792841  0.75445121  0.81742481  0.82359583  0.82940187
-  0.8584455   0.89889826  0.9279419   0.96804288  0.97476672  0.99708652
-  1.00289256  1.07238896  1.07855997  1.08528381  1.08768435  1.14153357
-  1.15442843  1.16998837  1.19820144  1.22973087  1.23948477  1.25205067
-  1.26734606  1.29887548  1.30862938  1.3426485   1.39682668  1.40939258
-  1.41179312  1.41914647  1.46597129  1.50974431  1.52231021  1.56359353
-  1.57031737  1.57648838  1.57888893  1.63946198  1.683235    1.68940602
-  1.72093544  1.74997908  1.75237962  1.83385308  1.84057691  1.86289671
-  1.89442613  1.90972153  1.97921793  2.00734377  2.02023862  2.06152194
-  2.08973502  2.15887964  2.16468568  2.17443958  2.23418208  2.30332669
-  2.33178149  2.40127788  2.41384378  2.4704225   2.50527218  2.57476858
-  2.58093959  2.64391319  2.72538665  2.73211049  2.75443028  2.8012551
-  2.84502812  2.89887734  2.91177219  2.91417274  3.02468983  3.05621925
-  3.06597315  3.16913689  3.22331506  3.33623269  3.39680575  3.50972339
-  3.6670653   3.73656169  3.80570631  3.9162234   4.06067046  4.22776627
-  4.40125696  4.55859887  4.6715165   5.56305008]
-Ground state energy =  -5.563050078438718
-Geometry:  ◯   ◯   ◯   ◯  ||  ◯   ◯   ◯   ◯  
+left block_A_extended.shape =  (484, 484) block_B_extended =  (484, 484)
+Eigen values are:  [-6.95975769e+00 -6.08069353e+00 -5.99888967e+00 -5.87702419e+00
+ -5.72879170e+00 -5.56639169e+00 -5.40292588e+00 -5.25609805e+00
+ -5.14967770e+00 -5.11345637e+00 -4.95785779e+00 -4.89971440e+00
+ -4.76345310e+00 -4.72839445e+00 -4.71870142e+00 -4.67608405e+00
+ -4.63529068e+00 -4.53366612e+00 -4.48229403e+00 -4.45487896e+00
+ -4.37257010e+00 -4.33146941e+00 -4.29368212e+00 -4.26637161e+00
+ -4.22237409e+00 -4.18598977e+00 -4.17305043e+00 -4.06082643e+00
+ -4.01382894e+00 -4.00534683e+00 -3.94136453e+00 -3.90767905e+00
+ -3.88502421e+00 -3.81079525e+00 -3.80050594e+00 -3.75815838e+00
+ -3.74074214e+00 -3.71750828e+00 -3.64665111e+00 -3.63468673e+00
+ -3.62903394e+00 -3.58615268e+00 -3.57051457e+00 -3.55463005e+00
+ -3.52504574e+00 -3.50328584e+00 -3.44308769e+00 -3.39676152e+00
+ -3.37973224e+00 -3.35040601e+00 -3.33909834e+00 -3.29787144e+00
+ -3.28069572e+00 -3.24936574e+00 -3.22669288e+00 -3.21873789e+00
+ -3.20335971e+00 -3.18634333e+00 -3.16375755e+00 -3.10724365e+00
+ -3.07353213e+00 -3.05739443e+00 -3.03616646e+00 -3.01279032e+00
+ -2.99043573e+00 -2.95788060e+00 -2.94455854e+00 -2.91882792e+00
+ -2.90169555e+00 -2.87902962e+00 -2.87652756e+00 -2.84726177e+00
+ -2.83502667e+00 -2.82474634e+00 -2.80540687e+00 -2.78224442e+00
+ -2.75893693e+00 -2.72839575e+00 -2.70093267e+00 -2.68971619e+00
+ -2.68390864e+00 -2.65530573e+00 -2.63931668e+00 -2.61550892e+00
+ -2.58607829e+00 -2.58174988e+00 -2.57409220e+00 -2.56013713e+00
+ -2.55233815e+00 -2.49781227e+00 -2.48625883e+00 -2.47067730e+00
+ -2.44180150e+00 -2.43807772e+00 -2.42029053e+00 -2.40522704e+00
+ -2.38949336e+00 -2.37807081e+00 -2.36209108e+00 -2.35388003e+00
+ -2.34011963e+00 -2.32229011e+00 -2.29587098e+00 -2.27996963e+00
+ -2.26936295e+00 -2.25336723e+00 -2.22963773e+00 -2.19135233e+00
+ -2.17655524e+00 -2.15089465e+00 -2.14821952e+00 -2.12836663e+00
+ -2.11066193e+00 -2.09798633e+00 -2.07066970e+00 -2.06728658e+00
+ -2.05338325e+00 -2.03935888e+00 -2.03505252e+00 -2.00956903e+00
+ -1.99196418e+00 -1.97613715e+00 -1.96386294e+00 -1.94838092e+00
+ -1.94277736e+00 -1.93400210e+00 -1.92936499e+00 -1.91716637e+00
+ -1.87961811e+00 -1.84964214e+00 -1.82942308e+00 -1.82437514e+00
+ -1.81079582e+00 -1.80687123e+00 -1.79681674e+00 -1.76947330e+00
+ -1.76641105e+00 -1.75462226e+00 -1.71908723e+00 -1.71668696e+00
+ -1.70453613e+00 -1.69208260e+00 -1.66513564e+00 -1.63321591e+00
+ -1.62373054e+00 -1.61113415e+00 -1.60019404e+00 -1.59504854e+00
+ -1.59153783e+00 -1.57995423e+00 -1.56986151e+00 -1.55552713e+00
+ -1.54659808e+00 -1.53503052e+00 -1.51650662e+00 -1.50860250e+00
+ -1.49953668e+00 -1.49054557e+00 -1.47416798e+00 -1.46109540e+00
+ -1.44368141e+00 -1.43539343e+00 -1.42221663e+00 -1.40385985e+00
+ -1.39734417e+00 -1.39354827e+00 -1.36428337e+00 -1.33913133e+00
+ -1.32708315e+00 -1.31727479e+00 -1.29122745e+00 -1.28505545e+00
+ -1.26673467e+00 -1.26165855e+00 -1.25813904e+00 -1.25208947e+00
+ -1.23422466e+00 -1.22987078e+00 -1.22790078e+00 -1.21063664e+00
+ -1.18386372e+00 -1.16745214e+00 -1.15934727e+00 -1.15058421e+00
+ -1.14206850e+00 -1.12511791e+00 -1.11218047e+00 -1.08558172e+00
+ -1.08330638e+00 -1.07766105e+00 -1.05552591e+00 -1.03354760e+00
+ -1.02893643e+00 -1.02443210e+00 -1.00129149e+00 -9.92547984e-01
+ -9.84850007e-01 -9.69811235e-01 -9.66188029e-01 -9.60162689e-01
+ -9.46776782e-01 -9.20058321e-01 -9.08211950e-01 -9.00054377e-01
+ -8.97496878e-01 -8.83989161e-01 -8.54213860e-01 -8.51274063e-01
+ -8.34252045e-01 -8.22188546e-01 -8.13639750e-01 -8.11839379e-01
+ -8.03517223e-01 -7.86590955e-01 -7.67869270e-01 -7.56475025e-01
+ -7.28300836e-01 -7.20628826e-01 -7.05152574e-01 -6.69913574e-01
+ -6.67051787e-01 -6.50786512e-01 -6.28166814e-01 -6.21623622e-01
+ -6.10060505e-01 -5.95657637e-01 -5.91457223e-01 -5.84577198e-01
+ -5.76275282e-01 -5.69978060e-01 -5.55502740e-01 -5.49741952e-01
+ -5.42366030e-01 -5.22418466e-01 -5.15267551e-01 -4.85975195e-01
+ -4.76223723e-01 -4.65166188e-01 -4.63599087e-01 -4.52748741e-01
+ -4.37447978e-01 -4.24495659e-01 -4.08467551e-01 -4.04434916e-01
+ -3.98003898e-01 -3.83369784e-01 -3.82361699e-01 -3.45512471e-01
+ -3.43586111e-01 -3.36041809e-01 -3.19785455e-01 -2.95975732e-01
+ -2.90990837e-01 -2.86685015e-01 -2.74039362e-01 -2.55308317e-01
+ -2.48807962e-01 -2.42261607e-01 -2.27179981e-01 -2.24651617e-01
+ -2.07477312e-01 -1.79094827e-01 -1.73315539e-01 -1.51965836e-01
+ -1.40329211e-01 -1.32812519e-01 -1.23943240e-01 -1.17478206e-01
+ -8.68502759e-02 -8.02995397e-02 -5.77119709e-02 -5.22629227e-02
+ -3.00725416e-02 -2.33713039e-02 -1.62865151e-02 -8.56812112e-03
+ -4.81627219e-03  9.68968186e-03  1.51198689e-02  3.45783403e-02
+  4.35868327e-02  5.18403891e-02  5.45443524e-02  6.42869501e-02
+  7.18325124e-02  7.73381214e-02  9.58629649e-02  1.01833517e-01
+  1.24886386e-01  1.25313080e-01  1.35368206e-01  1.43186603e-01
+  1.56835381e-01  1.71678974e-01  1.87755699e-01  2.11658896e-01
+  2.23593700e-01  2.33194288e-01  2.79003102e-01  2.81663994e-01
+  3.00276119e-01  3.10245188e-01  3.20055565e-01  3.32775810e-01
+  3.39775628e-01  3.69444861e-01  3.86358869e-01  3.91373195e-01
+  4.02899168e-01  4.08942048e-01  4.28965599e-01  4.29936102e-01
+  4.43034873e-01  4.51610310e-01  4.63969650e-01  4.71910915e-01
+  4.76744538e-01  4.79780118e-01  4.90444430e-01  5.04289898e-01
+  5.26605381e-01  5.28380992e-01  5.36763208e-01  5.42165414e-01
+  5.48686751e-01  5.77892686e-01  6.18046410e-01  6.22719194e-01
+  6.32237261e-01  6.37346639e-01  6.64811432e-01  6.65221220e-01
+  6.77931311e-01  6.88971930e-01  7.05866640e-01  7.11453170e-01
+  7.16316570e-01  7.27140147e-01  7.39487755e-01  7.72933864e-01
+  7.87899940e-01  8.06623768e-01  8.19898793e-01  8.22660807e-01
+  8.49718494e-01  8.51507820e-01  8.65694333e-01  8.86265177e-01
+  9.17928120e-01  9.30099627e-01  9.41752427e-01  9.46604959e-01
+  9.67512415e-01  9.69199914e-01  9.86090570e-01  1.00158992e+00
+  1.03874370e+00  1.04285042e+00  1.04978832e+00  1.05256849e+00
+  1.06739891e+00  1.08119800e+00  1.09369280e+00  1.10939237e+00
+  1.14170341e+00  1.14700587e+00  1.15348983e+00  1.16022909e+00
+  1.18279005e+00  1.19644610e+00  1.21677913e+00  1.23305386e+00
+  1.24043998e+00  1.28941159e+00  1.30645258e+00  1.32239380e+00
+  1.33572025e+00  1.35486900e+00  1.36561601e+00  1.37131530e+00
+  1.39695064e+00  1.40407557e+00  1.41124474e+00  1.43175398e+00
+  1.43424730e+00  1.44874226e+00  1.46257843e+00  1.46957360e+00
+  1.48296975e+00  1.49512574e+00  1.51063850e+00  1.54649035e+00
+  1.55541094e+00  1.56307218e+00  1.56821116e+00  1.57718662e+00
+  1.58196932e+00  1.58525324e+00  1.59440610e+00  1.60964147e+00
+  1.65187625e+00  1.67075092e+00  1.68495936e+00  1.70799366e+00
+  1.74558398e+00  1.74737404e+00  1.76593256e+00  1.80608875e+00
+  1.81620360e+00  1.86110355e+00  1.86446995e+00  1.88086051e+00
+  1.89686743e+00  1.90144178e+00  1.91413156e+00  1.93698064e+00
+  1.95448082e+00  1.97706808e+00  1.99361598e+00  2.02495165e+00
+  2.05005716e+00  2.05325919e+00  2.08038829e+00  2.08792019e+00
+  2.09499429e+00  2.10167146e+00  2.11843439e+00  2.14292086e+00
+  2.17217402e+00  2.18757165e+00  2.19133510e+00  2.22185539e+00
+  2.24787860e+00  2.26163239e+00  2.27846656e+00  2.40163389e+00
+  2.41991577e+00  2.45610971e+00  2.47069032e+00  2.48882914e+00
+  2.52057998e+00  2.52405159e+00  2.55724729e+00  2.58638220e+00
+  2.62802485e+00  2.65182357e+00  2.67012896e+00  2.68896473e+00
+  2.72247438e+00  2.76182720e+00  2.77403478e+00  2.79495066e+00
+  2.82576853e+00  2.84193833e+00  2.86304385e+00  2.91472295e+00
+  2.94578021e+00  2.99805697e+00  3.01144114e+00  3.09640613e+00
+  3.11957414e+00  3.17454906e+00  3.20881695e+00  3.22024700e+00
+  3.24716177e+00  3.33463476e+00  3.38041942e+00  3.42338053e+00
+  3.50167089e+00  3.50827221e+00  3.53489859e+00  3.54915697e+00
+  3.56904411e+00  3.62453459e+00  3.72652450e+00  3.92650382e+00
+  3.94538511e+00  4.11515067e+00  4.18748034e+00  4.32786401e+00
+  4.56002589e+00  4.64777174e+00  4.81152206e+00  5.24957238e+00]
+Ground state energy =  -6.959757685016538
+Geometry:  ◯   ◯   ◯   ◯   ◯  ||  ◯   ◯   ◯   ◯   ◯  
 Entanglement Spectrum: 
- 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 1e-06 0.009136 0.990864 
-Entanglement Entropy = 0.052002
+ 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 1e-06 0.009136 0.990863 
+Entanglement Entropy = 0.052005

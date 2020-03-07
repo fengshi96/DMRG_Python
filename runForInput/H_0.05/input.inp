@@ -1,7 +1,7 @@
 ### input file defines necessary input for dmrg executable
 
 # total number of sites in the chain
-num_sites=16
+num_sites=10
 
 # maximal number of states (of sub-block) to keep
 dmax=22

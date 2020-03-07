@@ -2,7 +2,7 @@
 
 #for TIFM
 Sz=-1
-Num_sites=16
+Num_sites=10
 Dmax=22
 
 cd runForInput || exit

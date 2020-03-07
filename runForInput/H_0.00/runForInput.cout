@@ -1,4 +1,4 @@
- num_sites =  16 
+ num_sites =  10 
  #states to keep =  22 
  interaction =  [['s_z', 's_z', -1]] 
  field =  [['s_x', -0.0]] 
@@ -35,128 +35,59 @@ truncation_error =  0.0
 copy information from blocks
 Bias = None is true
 Geometry:  ◯   ◯   ◯   ◯   ◯  ||  ◯   ◯   ◯   ◯   ◯  
-(iDMRG)5th iteration
-left block_A_extended.shape =  (1936, 1936) block_B_extended =  (1936, 1936)
-(iDMRG) truncated superblock:  (1936, 1936) (44, 44) (44, 44)
-Truncate the block operators
-truncation_error =  0.0
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = None is true
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||  ◯   ◯   ◯   ◯   ◯   ◯  
-(iDMRG)6th iteration
-left block_A_extended.shape =  (1936, 1936) block_B_extended =  (1936, 1936)
-(iDMRG) truncated superblock:  (1936, 1936) (44, 44) (44, 44)
-Truncate the block operators
-truncation_error =  0.0
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = None is true
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-(iDMRG)7th iteration
-left block_A_extended.shape =  (1936, 1936) block_B_extended =  (1936, 1936)
-(iDMRG) truncated superblock:  (1936, 1936) (44, 44) (44, 44)
-Truncate the block operators
-truncation_error =  0.0
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = None is true
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-1936
-(iDMRG)Eigen values are:  [-3.25 -3.25 -2.75 ...  2.75  2.75  2.75]
-(iDMRG)Ground state energy =  -3.25
-(iDMRG)number of left sites =  8
+1024
+(iDMRG)Eigen values are:  [-2.25 -2.25 -1.75 ...  1.75  2.25  2.25]
+(iDMRG)Ground state energy =  -2.25
+(iDMRG)number of left sites =  5
 --------------This is the end of iDMRG --------------
 left block_A_extended.shape =  (484, 484) block_B_extended =  (484, 484)
 (fDMRG)left_block.dim before sweep is  22
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
-rsize =  7
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  7
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
-rsize =  6
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  6
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
-rsize =  5
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  5
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22]
 rsize =  4
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  16
 (After one step in Sweep) shrinking_block.num_sites =  4
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22]
 rsize =  3
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  8
 (After one step in Sweep) shrinking_block.num_sites =  3
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22]
 rsize =  2
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  4
 (After one step in Sweep) shrinking_block.num_sites =  2
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22]
 rsize =  1
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  2
 (After one step in Sweep) shrinking_block.num_sites =  1
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
@@ -165,190 +96,106 @@ copy information from blocks
 Bias = left is true
 Right block memory is erased
 --------------This is the end of 1th Half-Sweep (L2R)--------------
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2]
-lsize =  14
+lsize =  8
 left_block, right_block =  22 2
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  14
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  8
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
 left_block, right_block (After dfmrg) =  22 4
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4]
-lsize =  13
+lsize =  7
 left_block, right_block =  22 4
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  13
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  7
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 8
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4, 8]
-lsize =  12
+lsize =  6
 left_block, right_block =  22 8
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  12
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  6
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 16
 left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4, 8, 16]
-lsize =  11
+lsize =  5
 left_block, right_block =  22 16
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  11
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  5
+Geometry:  ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 32
 left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4, 8, 16, 22]
-lsize =  10
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  10
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22]
-lsize =  9
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  9
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
-lsize =  8
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  8
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
-lsize =  7
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  7
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
-lsize =  6
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  6
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22]
-lsize =  5
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  5
-Geometry:  ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22]
 lsize =  4
 left_block, right_block =  22 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  16
 (After one step in Sweep) shrinking_block.num_sites =  4
-Geometry:  ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  16 44
 left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22]
 lsize =  3
 left_block, right_block =  16 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  8
 (After one step in Sweep) shrinking_block.num_sites =  3
-Geometry:  ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  8 44
 left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
 lsize =  2
 left_block, right_block =  8 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  4
 (After one step in Sweep) shrinking_block.num_sites =  2
-Geometry:  ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  4 44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
 lsize =  1
 left_block, right_block =  4 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  2
 (After one step in Sweep) shrinking_block.num_sites =  1
-Geometry:  ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  2 44
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
@@ -358,45 +205,45 @@ Bias = right is true
 Left block memory is erased
 --------------This is the end of 2th Half-Sweep (R2L)--------------
 [storage] left_dim in  storage,  [2]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  14
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  8
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  14
-Geometry:  ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  8
+Geometry:  ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  4
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  13
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  7
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  13
-Geometry:  ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  7
+Geometry:  ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  8
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4, 8]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  12
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  6
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  12
-Geometry:  ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  6
+Geometry:  ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  16
 left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4, 8, 16]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  11
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  5
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  11
-Geometry:  ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  5
+Geometry:  ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  32
 left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
 Truncate the block operators
@@ -404,129 +251,51 @@ truncation_error =  0.0
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4, 8, 16, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  10
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  10
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  9
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  9
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  8
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  8
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  7
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  7
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  6
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  6
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  5
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  5
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  4
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  16
 (After one step in Sweep) shrinking_block.num_sites =  4
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  3
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  8
 (After one step in Sweep) shrinking_block.num_sites =  3
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  2
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  4
 (After one step in Sweep) shrinking_block.num_sites =  2
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  1
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  2
 (After one step in Sweep) shrinking_block.num_sites =  1
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
@@ -535,190 +304,106 @@ copy information from blocks
 Bias = left is true
 Right block memory is erased
 --------------This is the end of 3th Half-Sweep (L2R)--------------
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2]
-lsize =  14
+lsize =  8
 left_block, right_block =  22 2
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  14
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  8
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
 left_block, right_block (After dfmrg) =  22 4
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4]
-lsize =  13
+lsize =  7
 left_block, right_block =  22 4
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  13
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  7
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 8
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4, 8]
-lsize =  12
+lsize =  6
 left_block, right_block =  22 8
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  12
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  6
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 16
 left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4, 8, 16]
-lsize =  11
+lsize =  5
 left_block, right_block =  22 16
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  11
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  5
+Geometry:  ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 32
 left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4, 8, 16, 22]
-lsize =  10
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  10
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22]
-lsize =  9
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  9
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
-lsize =  8
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  8
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
-lsize =  7
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  7
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
-lsize =  6
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  6
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22]
-lsize =  5
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  5
-Geometry:  ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22]
 lsize =  4
 left_block, right_block =  22 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  16
 (After one step in Sweep) shrinking_block.num_sites =  4
-Geometry:  ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  16 44
 left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22]
 lsize =  3
 left_block, right_block =  16 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  8
 (After one step in Sweep) shrinking_block.num_sites =  3
-Geometry:  ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  8 44
 left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
 lsize =  2
 left_block, right_block =  8 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  4
 (After one step in Sweep) shrinking_block.num_sites =  2
-Geometry:  ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  4 44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22]
 lsize =  1
 left_block, right_block =  4 22
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  2
 (After one step in Sweep) shrinking_block.num_sites =  1
-Geometry:  ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+Geometry:  ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  2 44
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
@@ -728,45 +413,45 @@ Bias = right is true
 Left block memory is erased
 --------------This is the end of 4th Half-Sweep (R2L)--------------
 [storage] left_dim in  storage,  [2]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  14
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  8
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  14
-Geometry:  ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  8
+Geometry:  ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  4
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  13
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  7
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  13
-Geometry:  ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  7
+Geometry:  ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  8
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4, 8]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  12
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  6
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  12
-Geometry:  ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  6
+Geometry:  ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  16
 left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4, 8, 16]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  11
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
+rsize =  5
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  11
-Geometry:  ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  5
+Geometry:  ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  32
 left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
 Truncate the block operators
@@ -774,129 +459,51 @@ truncation_error =  0.0
 copy information from blocks
 Bias = left is true
 [storage] left_dim in  storage,  [2, 4, 8, 16, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  10
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  10
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  9
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  9
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  8
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  8
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  7
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  7
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  6
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  6
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-rsize =  5
-(Sweep) The growing side is  left
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  5
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯   ◯  
-left_block.dim (The current growing side's dim) =  44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  4
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  16
 (After one step in Sweep) shrinking_block.num_sites =  4
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  3
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  8
 (After one step in Sweep) shrinking_block.num_sites =  3
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  2
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  4
 (After one step in Sweep) shrinking_block.num_sites =  2
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯   ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
 Bias = left is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22]
+[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 rsize =  1
 (Sweep) The growing side is  left
 (After one step in Sweep) shrinking_block.dim =  2
 (After one step in Sweep) shrinking_block.num_sites =  1
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||→  ◯  
 left_block.dim (The current growing side's dim) =  44
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 Truncate the block operators
@@ -905,94 +512,52 @@ copy information from blocks
 Bias = left is true
 Right block memory is erased
 --------------This is the end of 5th Half-Sweep (L2R)--------------
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2]
-lsize =  7
+lsize =  4
 left_block, right_block =  22 2
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  14
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  8
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯  
 left_block, right_block (After dfmrg) =  22 4
 left block_A_extended.shape =  (88, 88) block_B_extended =  (88, 88)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4]
-lsize =  6
+lsize =  3
 left_block, right_block =  22 4
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  13
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  7
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 8
 left block_A_extended.shape =  (176, 176) block_B_extended =  (176, 176)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4, 8]
-lsize =  5
+lsize =  2
 left_block, right_block =  22 8
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  12
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  6
+Geometry:  ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 16
 left block_A_extended.shape =  (352, 352) block_B_extended =  (352, 352)
 copy information from blocks
 Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
+[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22]
 [storage] right_dim in storage,  [2, 4, 8, 16]
-lsize =  4
+lsize =  1
 left_block, right_block =  22 16
 (Sweep) The growing side is  right
 (After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  11
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯  
+(After one step in Sweep) shrinking_block.num_sites =  5
+Geometry:  ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯  
 left_block, right_block (After dfmrg) =  22 32
 left block_A_extended.shape =  (704, 704) block_B_extended =  (704, 704)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22]
-lsize =  3
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  10
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22]
-lsize =  2
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  9
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
-Truncate the block operators
-truncation_error =  0.0
-copy information from blocks
-Bias = right is true
-[storage] left_dim in  storage,  [2, 4, 8, 16, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
-[storage] right_dim in storage,  [2, 4, 8, 16, 22, 22, 22]
-lsize =  1
-left_block, right_block =  22 22
-(Sweep) The growing side is  right
-(After one step in Sweep) shrinking_block.dim =  22
-(After one step in Sweep) shrinking_block.num_sites =  8
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ←||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
-left_block, right_block (After dfmrg) =  22 44
-left block_A_extended.shape =  (968, 968) block_B_extended =  (968, 968)
 Truncate the block operators
 truncation_error =  0.0
 copy information from blocks
@@ -1000,24 +565,27 @@ Bias = right is true
 Left block memory is erased
 --------------This is the end of 6th Half-Sweep (R2L)--------------
 left block_A_extended.shape =  (484, 484) block_B_extended =  (484, 484)
-Eigen values are:  [-3.75 -3.25 -2.75 -2.75 -2.75 -2.75 -2.75 -2.75 -2.25 -2.25 -2.25 -2.25
- -2.25 -2.25 -2.25 -2.25 -1.75 -1.75 -1.75 -1.75 -1.75 -1.75 -1.75 -1.75
- -1.75 -1.75 -1.75 -1.75 -1.75 -1.75 -1.75 -1.75 -1.75 -1.75 -1.75 -1.75
- -1.75 -1.75 -1.75 -1.75 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25
+Eigen values are:  [-2.25 -1.75 -1.75 -1.75 -1.75 -1.75 -1.75 -1.25 -1.25 -1.25 -1.25 -1.25
  -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25
- -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -0.75 -0.75
+ -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -1.25 -0.75 -0.75 -0.75
  -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75
  -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75
  -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75
  -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75
  -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75
- -0.75 -0.75 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25
+ -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75
+ -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.75 -0.25
  -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25
  -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25
  -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25
  -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25
  -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25
- -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25  0.25  0.25  0.25
+ -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25
+ -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25
+ -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25
+ -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25
+ -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25 -0.25
+ -0.25 -0.25 -0.25 -0.25 -0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25
   0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25
   0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25
   0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25
@@ -1025,24 +593,21 @@ Eigen values are:  [-3.75 -3.25 -2.75 -2.75 -2.75 -2.75 -2.75 -2.75 -2.25 -2.25 
   0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25
   0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25
   0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25
-  0.25  0.25  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75
+  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25
+  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25  0.25
+  0.25  0.25  0.25  0.25  0.25  0.75  0.75  0.75  0.75  0.75  0.75  0.75
   0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75
   0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75
   0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75
   0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75
   0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75
   0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75  0.75
-  0.75  0.75  0.75  0.75  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25
+  0.75  0.75  0.75  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25
   1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25
-  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25
-  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25
-  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.75  1.75  1.75  1.75
-  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75
-  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75
-  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75  1.75  2.25  2.25  2.25
-  2.25  2.25  2.25  2.75]
-Ground state energy =  -3.75
-Geometry:  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  ||  ◯   ◯   ◯   ◯   ◯   ◯   ◯   ◯  
+  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.25  1.75  1.75  1.75
+  1.75  1.75  1.75  1.75]
+Ground state energy =  -2.25
+Geometry:  ◯   ◯   ◯   ◯   ◯  ||  ◯   ◯   ◯   ◯   ◯  
 Entanglement Spectrum: 
  0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0 
 Entanglement Entropy = 0.0
