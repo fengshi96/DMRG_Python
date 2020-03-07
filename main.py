@@ -105,6 +105,7 @@ def main(total, shellargs):
         half_sweeps += 1
         print("--------------This is the end of " + str(half_sweeps) + "th Half-Sweep (R2L)--------------")
 
+    super_block = left_block.glue(right_block, interaction)
     evals, evecs = np.linalg.eigh(super_block.block_operators["block_ham"])  # diagonalize the final super_block
     print("Eigen values are: ", evals)
     print("Ground state energy = ", min(evals))
@@ -115,18 +116,15 @@ def main(total, shellargs):
 
     # calculate entanglement spectrum
     wf_gs = Wavefunction(left_block.dim, right_block.dim)
-    if 2 ** (
-            num_sites / 2) < dmax:  # No truncation if Hilbert space dimension of sub-block is less than dmax
-        wf_gs.as_matrix = np.reshape(evecs[:, 0], (left_block.dim, right_block.dim))  # No truncation applied
-    else:  # truncation was applied if Hilbert space dimension of sub-block is larger than dmax
-        try:
-            wf_gs.as_matrix = np.reshape(evecs[:, 0], (dmax, 2 * dmax))  # If the last sweep is R2L
-        except ValueError:
-            wf_gs.as_matrix = np.reshape(evecs[:, 0], (2 * dmax, dmax))  # If the last sweep is L2R
+    wf_gs.as_matrix = np.reshape(evecs[:, 0], (left_block.dim, right_block.dim))
     rdm = wf_gs.rdm("right")
-    EE_evals, EE_evecs = np.linalg.eigh(rdm)
-    EE_evals = np.around(EE_evals, decimals=6)
-    print("Entanglement Spectrum: \n", *EE_evals)
+    ES_evals, ES_evecs = np.linalg.eigh(rdm)
+    ES_evals = ES_evals + 1e-15  # get rid of singularity
+    ES = np.around(ES_evals + 1e-15, decimals=6)
+    EE = - np.around(np.dot(ES_evals, np.log(ES_evals)), decimals=6)
+
+    print("Entanglement Spectrum: \n", *ES)
+    print("Entanglement Entropy = ", EE)
 
 
 if __name__ == '__main__':
